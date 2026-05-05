@@ -5,6 +5,7 @@ const LEVEL_ID := &"level_01_main"
 const WAYPOINT_ID := &"waypoints_01_main"
 const POLYGON_INDEX_ID := &"polygons_01_main"
 const PlayerScene := preload("res://scenes/player/player.tscn")
+const ZaxLevelActorScript := preload("res://src/level/zax_level_actor.gd")
 
 @export var build_static_collision := true
 @export var show_debug_overlay := true
@@ -17,10 +18,15 @@ var _waypoint_map: ZaxWaypointMap
 var _polygon_index: ZaxModelPolygonIndex
 var _player: ZaxPlayer
 var _static_collision_count := 0
+var _runtime_actor_count := 0
+var _actor_collision_count := 0
 var _player_spawn_position := Vector2.ZERO
+var _actor_summaries: Array[Dictionary] = []
 
 @onready var _static_collisions: Node2D = $StaticCollisions
-@onready var _player_layer: Node2D = $PlayerLayer
+@onready var _dynamic_layer: Node2D = $DynamicLayer
+@onready var _actor_layer: Node2D = $DynamicLayer/ActorLayer
+@onready var _player_layer: Node2D = $DynamicLayer/PlayerLayer
 @onready var _status_label: Label = $Hud/TopBar/MarginContainer/StatusLabel
 
 
@@ -40,6 +46,7 @@ func _ready() -> void:
 
 	if build_static_collision:
 		_build_static_collisions()
+	_spawn_actors()
 	_spawn_player()
 	_update_status_label()
 	queue_redraw()
@@ -48,6 +55,7 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("debug_toggle_overlay"):
 		show_debug_overlay = not show_debug_overlay
+		_set_actor_debug_visible(show_debug_overlay)
 		_update_status_label()
 		queue_redraw()
 
@@ -73,6 +81,18 @@ func get_static_collision_count() -> int:
 	return _static_collision_count
 
 
+func get_runtime_actor_count() -> int:
+	return _runtime_actor_count
+
+
+func get_actor_collision_count() -> int:
+	return _actor_collision_count
+
+
+func get_actor_summaries() -> Array[Dictionary]:
+	return _actor_summaries.duplicate(true)
+
+
 func get_player_spawn_position() -> Vector2:
 	return _player_spawn_position
 
@@ -81,6 +101,18 @@ static func is_collision_entity(entity: ZaxLevelEntity, polygon_index: ZaxModelP
 	if entity == null or polygon_index == null:
 		return false
 	if not entity.is_static_collision_candidate():
+		return false
+	if entity.is_runtime_actor_candidate():
+		return false
+
+	var polygon := polygon_index.load_polygon(entity.model_path) as ZaxModelPolygon
+	return polygon != null and polygon.is_valid()
+
+
+static func is_actor_collision_entity(entity: ZaxLevelEntity, polygon_index: ZaxModelPolygonIndex) -> bool:
+	if entity == null or polygon_index == null:
+		return false
+	if not entity.is_runtime_actor_candidate() or not entity.visible or not entity.collideable:
 		return false
 
 	var polygon := polygon_index.load_polygon(entity.model_path) as ZaxModelPolygon
@@ -94,13 +126,10 @@ func _build_static_collisions() -> void:
 
 	for entity_ref: RefCounted in _level.entities:
 		var entity := entity_ref as ZaxLevelEntity
-		if entity == null or not entity.is_static_collision_candidate():
+		if not is_collision_entity(entity, _polygon_index):
 			continue
 
 		var polygon := _polygon_index.load_polygon(entity.model_path) as ZaxModelPolygon
-		if polygon == null or not polygon.is_valid():
-			continue
-
 		_add_static_collision(entity, polygon)
 
 
@@ -119,6 +148,33 @@ func _add_static_collision(entity: ZaxLevelEntity, polygon: ZaxModelPolygon) -> 
 
 	_static_collisions.add_child(body)
 	_static_collision_count += 1
+
+
+func _spawn_actors() -> void:
+	_runtime_actor_count = 0
+	_actor_collision_count = 0
+	_actor_summaries.clear()
+	for child in _actor_layer.get_children():
+		child.queue_free()
+
+	for entity_ref: RefCounted in _level.entities:
+		var entity := entity_ref as ZaxLevelEntity
+		if entity == null or not entity.is_runtime_actor_candidate():
+			continue
+
+		var polygon := _polygon_index.load_polygon(entity.model_path) as ZaxModelPolygon
+		if polygon != null and not polygon.is_valid():
+			polygon = null
+
+		var actor: Node2D = ZaxLevelActorScript.new()
+		actor.name = _actor_node_name(entity)
+		actor.call("configure", entity, polygon, show_debug_overlay)
+		_actor_layer.add_child(actor)
+
+		_runtime_actor_count += 1
+		if bool(actor.call("has_collision_hook")):
+			_actor_collision_count += 1
+		_actor_summaries.append(actor.call("get_debug_summary"))
 
 
 func _spawn_player() -> void:
@@ -174,6 +230,8 @@ func _draw_entity_footprints() -> void:
 		var entity := entity_ref as ZaxLevelEntity
 		if entity == null:
 			continue
+		if entity.is_runtime_actor_candidate():
+			continue
 
 		var polygon := _polygon_index.load_polygon(entity.model_path) as ZaxModelPolygon
 		if polygon == null or not polygon.is_valid():
@@ -217,13 +275,27 @@ func _entity_color(entity: ZaxLevelEntity) -> Color:
 	return Color(0.78, 0.82, 0.58)
 
 
+func _actor_node_name(entity: ZaxLevelEntity) -> String:
+	var basename := entity.model_path.get_file().replace(" ", "_").replace(",", "")
+	if basename.is_empty():
+		basename = "Actor"
+	return "Actor_%04d_%s" % [entity.source_index, basename]
+
+
+func _set_actor_debug_visible(value: bool) -> void:
+	for child in _actor_layer.get_children():
+		child.call("set_debug_visible", value)
+
+
 func _update_status_label() -> void:
 	if _status_label == null or _level == null:
 		return
 
-	_status_label.text = "01 Main - %s | spawn %s | collisions %d | debug %s" % [
+	_status_label.text = "01 Main - %s | spawn %s | static %d | actors %d/%d | debug %s" % [
 		_level.description,
 		_player_spawn_position,
 		_static_collision_count,
+		_runtime_actor_count,
+		_actor_collision_count,
 		"on" if show_debug_overlay else "off",
 	]

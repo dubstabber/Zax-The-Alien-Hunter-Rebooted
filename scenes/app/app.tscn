@@ -7,7 +7,12 @@ script = ExtResource("1_level_world")
 
 [node name="StaticCollisions" type="Node2D" parent="."]
 
-[node name="PlayerLayer" type="Node2D" parent="."]
+[node name="DynamicLayer" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="ActorLayer" type="Node2D" parent="DynamicLayer"]
+
+[node name="PlayerLayer" type="Node2D" parent="DynamicLayer"]
 
 [node name="Hud" type="CanvasLayer" parent="."]
 

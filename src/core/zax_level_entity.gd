@@ -13,6 +13,12 @@ var position := Vector2.ZERO
 var rendering_height := 0.0
 var rendering_height_float := 0.0
 var current_sequence := ""
+var movement_speed := ""
+var movement_angle := 0.0
+var aiming_angle := 0.0
+var current_frame := 0
+var blocking_priority := ""
+var default_death_type := ""
 var has_category_field := false
 var visible := false
 var collideable := false
@@ -52,6 +58,12 @@ func load_from_entries(entity_index: int, entries: Array) -> void:
 	rendering_height = _float_field("Rendering Height")
 	rendering_height_float = _float_field("Rendering Height Float")
 	current_sequence = _string_field("Cur Sequence")
+	movement_speed = _string_field("Movement Speed")
+	movement_angle = _float_field("Movement Angle")
+	aiming_angle = _float_field("Aiming Angle")
+	current_frame = _int_field("Current Frame")
+	blocking_priority = _string_field("Blocking Priority")
+	default_death_type = _string_field("Default Death Type")
 	visible = _bool_field("Visible")
 	collideable = _bool_field("Collideable")
 	stationary = _bool_field("Stationary")
@@ -71,6 +83,32 @@ func is_static_collision_candidate() -> bool:
 	return visible and collideable and not model_path.is_empty()
 
 
+func is_runtime_actor_candidate() -> bool:
+	if model_path == "Editor/Spawn Point":
+		return false
+	return has_hit_points or has_category_tag("Enemy") or has_category_tag("NonInteractiveSequence Actor")
+
+
+func get_debug_summary() -> Dictionary:
+	return {
+		"source_index": source_index,
+		"name": name,
+		"model_path": model_path,
+		"category": category,
+		"position": position,
+		"visible": visible,
+		"collideable": collideable,
+		"active": active,
+		"current_sequence": current_sequence,
+		"movement_speed": movement_speed,
+		"movement_angle": movement_angle,
+		"aiming_angle": aiming_angle,
+		"current_frame": current_frame,
+		"blocking_priority": blocking_priority,
+		"default_death_type": default_death_type,
+	}
+
+
 func _string_field(key: String) -> String:
 	return _variant_to_string(raw_fields.get(key, ""))
 
@@ -80,6 +118,15 @@ func _float_field(key: String) -> float:
 	if text.is_valid_float():
 		return text.to_float()
 	return 0.0
+
+
+func _int_field(key: String) -> int:
+	var text := _string_field(key)
+	if text.is_valid_int():
+		return text.to_int()
+	if text.is_valid_float():
+		return roundi(text.to_float())
+	return 0
 
 
 func _bool_field(key: String) -> bool:

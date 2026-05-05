@@ -1,6 +1,7 @@
 extends SceneTree
 
 const ZaxLevelDataScript := preload("res://src/core/zax_level_data.gd")
+const ZaxLevelActorScript := preload("res://src/level/zax_level_actor.gd")
 const ZaxLevelWorldScript := preload("res://src/level/level_world.gd")
 const ZaxModelPolygonIndexScript := preload("res://src/core/zax_model_polygon_index.gd")
 const ZaxWaypointMapScript := preload("res://src/core/zax_waypoint_map.gd")
@@ -19,7 +20,9 @@ func _run() -> void:
 	_test_waypoint_data()
 	_test_polygon_index()
 	_test_spawn_resolution()
+	_test_runtime_actor_candidates()
 	_test_static_collision_candidates()
+	_test_actor_node()
 	_test_player_scene()
 	_test_scene_instantiation()
 
@@ -72,6 +75,7 @@ func _test_level_data() -> void:
 	_expect_equal(first_entity.get("visible"), true, "first entity visible")
 	_expect_equal(first_entity.get("collideable"), true, "first entity collideable")
 	_expect_equal(first_entity.get("current_sequence"), "Idle", "first entity sequence")
+	_expect_equal(first_entity.call("is_runtime_actor_candidate"), false, "first entity is environment")
 
 	var category_counts := level.get_category_counts()
 	_expect_equal(category_counts.get(""), 1152, "empty category count")
@@ -147,7 +151,82 @@ func _test_static_collision_candidates() -> void:
 		if ZaxLevelWorldScript.is_collision_entity(entity, polygon_index):
 			candidate_count += 1
 
-	_expect_equal(candidate_count, 911, "static collision candidate count")
+	_expect_equal(candidate_count, 883, "static collision candidate count")
+
+
+func _test_runtime_actor_candidates() -> void:
+	var raw := _load_json("res://assets/zax/levels/data/01 Main.json")
+	var level: ZaxLevelData = ZaxLevelDataScript.new()
+	level.load_from_dictionary(&"level_01_main", raw)
+
+	var polygon_raw := _load_json("res://assets/zax/polygons/model_polygon_index.json")
+	var polygon_index: ZaxModelPolygonIndex = ZaxModelPolygonIndexScript.new()
+	polygon_index.load_from_dictionary(&"polygons_01_main", polygon_raw)
+
+	var actor_count := 0
+	var actor_collision_count := 0
+	var model_counts: Dictionary = {}
+	var first_targ: ZaxLevelEntity
+	for entity_ref: RefCounted in level.entities:
+		var entity := entity_ref as ZaxLevelEntity
+		if entity == null or not entity.is_runtime_actor_candidate():
+			continue
+
+		actor_count += 1
+		model_counts[entity.model_path] = int(model_counts.get(entity.model_path, 0)) + 1
+		if entity.model_path == "Characters/Targ" and first_targ == null:
+			first_targ = entity
+		if ZaxLevelWorldScript.is_actor_collision_entity(entity, polygon_index):
+			actor_collision_count += 1
+
+	_expect_equal(actor_count, 35, "runtime actor candidate count")
+	_expect_equal(actor_collision_count, 28, "runtime actor collision count")
+	_expect_equal(model_counts.get("Characters/Targ"), 20, "runtime Targ count")
+	_expect_equal(model_counts.get("Characters/Jungle Creature"), 4, "runtime Jungle Creature count")
+	_expect_equal(model_counts.get("Characters/Rogcoil/Rogcoil"), 4, "runtime Rogcoil count")
+	_expect_equal(model_counts.get("Characters/Jungle Bird"), 6, "runtime Jungle Bird count")
+	_expect_equal(model_counts.get("Characters/Korbo Characters/Valeth"), 1, "runtime Valeth count")
+	_expect_true(first_targ != null, "first runtime Targ exists")
+	if first_targ != null:
+		_expect_equal(first_targ.position, Vector2(223, 1130), "first runtime Targ position")
+		_expect_equal(first_targ.current_sequence, "Idle", "first runtime Targ sequence")
+		_expect_equal(first_targ.movement_speed, "Walk", "first runtime Targ movement speed")
+		_expect_equal(first_targ.default_death_type, "Targ Default", "first runtime Targ death behavior")
+
+
+func _test_actor_node() -> void:
+	var raw := _load_json("res://assets/zax/levels/data/01 Main.json")
+	var level: ZaxLevelData = ZaxLevelDataScript.new()
+	level.load_from_dictionary(&"level_01_main", raw)
+
+	var polygon_raw := _load_json("res://assets/zax/polygons/model_polygon_index.json")
+	var polygon_index: ZaxModelPolygonIndex = ZaxModelPolygonIndexScript.new()
+	polygon_index.load_from_dictionary(&"polygons_01_main", polygon_raw)
+
+	var first_targ: ZaxLevelEntity
+	for entity_ref: RefCounted in level.entities:
+		var entity := entity_ref as ZaxLevelEntity
+		if entity != null and entity.model_path == "Characters/Targ":
+			first_targ = entity
+			break
+
+	_expect_true(first_targ != null, "actor node source Targ exists")
+	if first_targ == null:
+		return
+
+	var polygon := polygon_index.load_polygon(first_targ.model_path) as ZaxModelPolygon
+	var actor: Node2D = ZaxLevelActorScript.new()
+	actor.call("configure", first_targ, polygon, true)
+
+	_expect_equal(actor.position, Vector2(223, 1130), "actor node position")
+	_expect_equal(actor.get_meta("model_path"), "Characters/Targ", "actor node model metadata")
+	_expect_equal(actor.get_meta("current_sequence"), "Idle", "actor node sequence metadata")
+	_expect_true(bool(actor.call("has_collision_hook")), "actor node has collision hook")
+
+	var summary: Dictionary = actor.call("get_debug_summary")
+	_expect_equal(summary.get("movement_speed"), "Walk", "actor node summary movement speed")
+	_expect_equal(summary.get("has_valid_polygon"), true, "actor node summary polygon")
+	actor.free()
 
 
 func _test_player_scene() -> void:
@@ -178,6 +257,8 @@ func _test_scene_instantiation() -> void:
 		var instance: Node = packed_scene.instantiate()
 		_expect_true(instance != null, "app scene instantiates")
 		if instance != null:
+			_expect_true(instance.get_node_or_null("DynamicLayer/ActorLayer") != null, "app scene has actor layer")
+			_expect_true(instance.get_node_or_null("DynamicLayer/PlayerLayer") != null, "app scene has player layer")
 			instance.free()
 
 
