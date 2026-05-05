@@ -31,6 +31,10 @@ func load_texture(asset_id: StringName) -> Texture2D:
 	if path.is_empty():
 		return null
 
+	return load_texture_path(path)
+
+
+func load_texture_path(path: String) -> Texture2D:
 	var texture := load(path)
 	if texture is Texture2D:
 		return texture

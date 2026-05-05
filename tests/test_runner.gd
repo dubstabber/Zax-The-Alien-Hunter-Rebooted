@@ -5,6 +5,7 @@ const ZaxLevelActorScript := preload("res://src/level/zax_level_actor.gd")
 const ZaxLevelWorldScript := preload("res://src/level/level_world.gd")
 const ZaxModelPolygonIndexScript := preload("res://src/core/zax_model_polygon_index.gd")
 const ZaxWaypointMapScript := preload("res://src/core/zax_waypoint_map.gd")
+const ZaxPlayerScript := preload("res://src/player/zax_player.gd")
 
 var _failures := 0
 
@@ -24,6 +25,7 @@ func _run() -> void:
 	_test_static_collision_candidates()
 	_test_actor_node()
 	_test_player_scene()
+	_test_player_visual_rules()
 	_test_scene_instantiation()
 
 	if _failures > 0:
@@ -45,10 +47,44 @@ func _test_project_settings() -> void:
 func _test_manifest() -> void:
 	var manifest := _load_json("res://assets/zax/manifest.json")
 	var assets: Dictionary = manifest.get("assets", {})
-	for asset_id in ["manifest_extraction", "manifest_ida_coverage", "level_01_main", "waypoints_01_main", "texture_01_main", "animation_zax_metadata", "animation_zax_frame_0000", "polygons_01_main"]:
+	for asset_id in ["manifest_extraction", "manifest_ida_coverage", "level_01_main", "waypoints_01_main", "texture_01_main", "animation_zax_metadata", "animation_zax_frame_0000", "model_animation_crater", "model_animation_crater_torso", "model_animation_crater_small_gun", "polygons_01_main"]:
 		_expect_true(assets.has(asset_id), "manifest has %s" % asset_id)
 		if assets.has(asset_id):
 			_expect_true(FileAccess.file_exists(assets[asset_id]["path"]), "asset exists: %s" % asset_id)
+
+	var crater_animation := _load_json("res://assets/zax/model_animations/data/Crater/Crater_model_animations.json")
+	var sequences: Dictionary = crater_animation.get("sequences", {})
+	_expect_true(sequences.has("Idle"), "Crater animation has Idle")
+	_expect_true(sequences.has("Walk"), "Crater animation has Walk")
+	_expect_true(sequences.has("Run"), "Crater animation has Run")
+	if sequences.has("Idle"):
+		_expect_equal(sequences["Idle"].get("frame_count"), 120.0, "Crater Idle frame count")
+		_expect_equal(sequences["Idle"].get("rotation_count"), 12.0, "Crater Idle rotation count")
+	if sequences.has("Walk"):
+		_expect_equal(sequences["Walk"].get("fps"), 15.0, "Crater Walk fps")
+	if sequences.has("Run"):
+		_expect_equal(sequences["Run"].get("frame_count"), 144.0, "Crater Run frame count")
+
+	var crater_torso_animation := _load_json("res://assets/zax/model_animations/data/Crater Torso/Crater Torso_model_animations.json")
+	var torso_sequences: Dictionary = crater_torso_animation.get("sequences", {})
+	_expect_true(torso_sequences.has("Idle"), "Crater torso animation has Idle")
+	_expect_true(torso_sequences.has("Walk"), "Crater torso animation has Walk")
+	_expect_true(torso_sequences.has("Run"), "Crater torso animation has Run")
+	if torso_sequences.has("Idle"):
+		_expect_equal(torso_sequences["Idle"].get("frame_count"), 120.0, "Crater torso Idle frame count")
+	if torso_sequences.has("Run"):
+		_expect_equal(torso_sequences["Run"].get("fps"), 15.0, "Crater torso Run fps")
+
+	var small_gun_animation := _load_json("res://assets/zax/model_animations/data/SmallGun/SmallGun_model_animations.json")
+	var small_gun_sequences: Dictionary = small_gun_animation.get("sequences", {})
+	_expect_true(small_gun_sequences.has("Idle"), "Crater small gun animation has Idle")
+	_expect_true(small_gun_sequences.has("Walk"), "Crater small gun animation has Walk")
+	_expect_true(small_gun_sequences.has("Run"), "Crater small gun animation has Run")
+	if small_gun_sequences.has("Run"):
+		_expect_equal(small_gun_sequences["Run"].get("frame_count"), 144.0, "Crater small gun Run frame count")
+		_expect_equal(small_gun_sequences["Run"].get("present_frame_count"), 142.0, "Crater small gun Run present count")
+	if small_gun_sequences.has("Walk"):
+		_expect_equal(small_gun_sequences["Walk"].get("present_frame_count"), 117.0, "Crater small gun Walk present count")
 
 	var coverage := _load_json("res://assets/zax/manifests/ida_asset_coverage_audit.json")
 	var summary: Dictionary = coverage.get("summary", {})
@@ -237,7 +273,52 @@ func _test_player_scene() -> void:
 		var instance: Node = packed_scene.instantiate()
 		_expect_true(instance is CharacterBody2D, "player scene instantiates as CharacterBody2D")
 		if instance != null:
+			_expect_true(instance.get_node_or_null("LowerBodySprite") is AnimatedSprite2D, "player scene has lower body sprite")
+			_expect_true(instance.get_node_or_null("UpperBodySprite") is AnimatedSprite2D, "player scene has upper body sprite")
+			_expect_true(instance.get_node_or_null("WeaponSprite") is AnimatedSprite2D, "player scene has weapon sprite")
+			_expect_equal(instance.get_node("WeaponSprite").visible, false, "player weapon sprite defaults hidden")
+			_expect_true(instance.get_node_or_null("AnimatedSprite2D") == null, "player scene no longer uses placeholder AnimatedSprite2D")
+			_expect_true(instance.get_node_or_null("Sprite2D") == null, "player scene no longer uses static Sprite2D")
 			instance.free()
+
+
+func _test_player_visual_rules() -> void:
+	_expect_equal(ZaxPlayerScript.direction_to_octant(Vector2.RIGHT), 0, "right-facing octant")
+	_expect_equal(ZaxPlayerScript.direction_to_octant(Vector2.DOWN), 2, "down-facing octant")
+	_expect_equal(ZaxPlayerScript.direction_to_octant(Vector2.LEFT), 4, "left-facing octant")
+	_expect_equal(ZaxPlayerScript.direction_to_octant(Vector2.UP), 6, "up-facing octant")
+	_expect_equal(ZaxPlayerScript.direction_to_octant(Vector2(-1, -1)), 5, "northwest-facing octant")
+
+	var scene := load("res://scenes/player/player.tscn")
+	if not scene is PackedScene:
+		_fail("player scene loads for visual rules")
+		return
+
+	var player: Node = (scene as PackedScene).instantiate()
+	if player == null:
+		_fail("player scene instantiates for visual rules")
+		return
+
+	player.call("update_visual_state_for_direction", Vector2.ZERO)
+	_expect_equal(player.call("get_current_visual_sequence_name"), &"Idle", "stationary player uses Idle")
+	_expect_equal(player.call("get_current_facing_octant"), 2, "stationary player keeps default south facing")
+
+	player.call("update_visual_state_for_direction", Vector2.RIGHT)
+	_expect_equal(player.call("get_current_visual_sequence_name"), &"Run", "moving player uses Run")
+	_expect_equal(player.call("get_current_facing_octant"), 0, "moving right faces east")
+
+	player.call("update_visual_state_for_direction", Vector2.ZERO)
+	_expect_equal(player.call("get_current_visual_sequence_name"), &"Idle", "stopped player returns to Idle")
+	_expect_equal(player.call("get_current_facing_octant"), 0, "stopped player preserves last facing")
+	_expect_equal(player.call("has_weapon"), false, "player starts without weapon visual")
+	_expect_equal(player.get_node("WeaponSprite").visible, false, "weapon layer hidden without weapon")
+	player.call("set_weapon_count", 1)
+	_expect_equal(player.call("has_weapon"), true, "player reports weapon after count set")
+	_expect_equal(player.get_node("WeaponSprite").visible, true, "weapon layer visible with weapon")
+	player.call("set_has_weapon", false)
+	_expect_equal(player.call("has_weapon"), false, "player clears weapon via boolean")
+	_expect_equal(player.get_node("WeaponSprite").visible, false, "weapon layer hides after weapon clear")
+	player.free()
 
 
 func _count_zero_vertex_models(raw: Dictionary) -> int:

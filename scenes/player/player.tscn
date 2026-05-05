@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://zaxplayernative01"]
+[gd_scene load_steps=4 format=3 uid="uid://zaxplayernative01"]
 
 [ext_resource type="Script" path="res://src/player/zax_player.gd" id="1_zax_player"]
+[ext_resource type="Script" path="res://src/player/zax_player_visuals.gd" id="2_zax_player_visuals"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_player"]
 radius = 18.0
@@ -8,9 +9,20 @@ radius = 18.0
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_zax_player")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -28)
-scale = Vector2(0.5, 0.5)
+[node name="LowerBodySprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+script = ExtResource("2_zax_player_visuals")
+
+[node name="UpperBodySprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+script = ExtResource("2_zax_player_visuals")
+model_animation_asset_id = &"model_animation_crater_torso"
+
+[node name="WeaponSprite" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+script = ExtResource("2_zax_player_visuals")
+model_animation_asset_id = &"model_animation_crater_small_gun"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_player")

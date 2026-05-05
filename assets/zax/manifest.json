@@ -53,6 +53,46 @@
       "height": 114,
       "sha256": "8643daa7fb5eb196788b44a182d6659c528c26c9d673414da76d0a38ea449577"
     },
+    "model_animation_crater": {
+      "type": "model_animation_metadata",
+      "path": "res://assets/zax/model_animations/data/Crater/Crater_model_animations.json",
+      "source": "extract-zax-assets/extracted/model_animations/data/Crater/Crater_model_animations.json",
+      "model": "Characters/Crater/Crater",
+      "sequences": [
+        "Idle",
+        "Walk",
+        "Run"
+      ],
+      "frame_count": 384,
+      "sha256": "8cc9e3e8af80b228fbe44363e9928fd5962e812d831e731fca72f337e54c6b0c"
+    },
+    "model_animation_crater_torso": {
+      "type": "model_animation_metadata",
+      "path": "res://assets/zax/model_animations/data/Crater Torso/Crater Torso_model_animations.json",
+      "source": "extract-zax-assets/extracted/model_animations/data/Crater Torso/Crater Torso_model_animations.json",
+      "model": "Characters/Crater/Crater Torso",
+      "sequences": [
+        "Idle",
+        "Walk",
+        "Run"
+      ],
+      "frame_count": 384,
+      "sha256": "4186769e4e2a22d66394f305ef8839964ace646be19b8388bd735ae8a78cb90e"
+    },
+    "model_animation_crater_small_gun": {
+      "type": "model_animation_metadata",
+      "path": "res://assets/zax/model_animations/data/SmallGun/SmallGun_model_animations.json",
+      "source": "extract-zax-assets/extracted/model_animations/data/SmallGun/SmallGun_model_animations.json",
+      "model": "Characters/Crater/SmallGun",
+      "sequences": [
+        "Idle",
+        "Walk",
+        "Run"
+      ],
+      "frame_count": 384,
+      "present_frame_count": 379,
+      "sha256": "8138482aeaa23abcac254c43a3e0751829c0affdffb4ca1b773c569b081619bf"
+    },
     "polygons_01_main": {
       "type": "polygon_index",
       "path": "res://assets/zax/polygons/model_polygon_index.json",
