@@ -1,0 +1,56 @@
+# Godot generated state. Recreated by the editor/import step.
+.godot/
+.import/
+
+# Keep source-side Godot metadata tracked:
+# - *.import stores import options for source assets.
+# - *.uid stores stable resource IDs used by Godot 4.
+
+# Godot export/build output.
+/export/
+/exports/
+/build/
+/builds/
+/dist/
+*.pck
+*.pck.*
+*.apk
+*.aab
+*.ipa
+*.dmg
+*.app/
+
+# Local Godot editor binaries if one is dropped into the project root.
+/Godot_*
+/Godot_v*
+
+# Local agent/editor/OS noise.
+.codex
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python helper-script caches.
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local runtime logs/user data.
+/logs/
+/user/
+*.log
+
+# Raw original install and generated extraction dump.
+extract-zax-assets/
+AGENTS.md
+CLAUDE.md
