@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://b70qng7c0zax1"]
+
+[ext_resource type="Script" path="res://src/level/level_viewer.gd" id="1_level_viewer"]
+
+[node name="App" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_level_viewer")
+
+[node name="Header" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 92.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Header"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 12
+
+[node name="HeaderRow" type="HBoxContainer" parent="Header/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ReferenceTexture" type="TextureRect" parent="Header/MarginContainer/HeaderRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 68)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextColumn" type="VBoxContainer" parent="Header/MarginContainer/HeaderRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitleLabel" type="Label" parent="Header/MarginContainer/HeaderRow/TextColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "01 Main"
+
+[node name="MetaLabel" type="Label" parent="Header/MarginContainer/HeaderRow/TextColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Loading"
+
+[node name="SourceLabel" type="Label" parent="Header/MarginContainer/HeaderRow/TextColumn"]
+layout_mode = 2
+text = "Curated runtime slice from IDA-audited extraction data"

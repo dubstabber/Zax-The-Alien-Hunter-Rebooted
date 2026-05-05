@@ -52,5 +52,4 @@ venv/
 
 # Raw original install and generated extraction dump.
 extract-zax-assets/
-AGENTS.md
 CLAUDE.md

@@ -11,8 +11,27 @@ config_version=5
 [application]
 
 config/name="Zax: The Alien Hunter Rebooted"
+run/main_scene="res://scenes/app/app.tscn"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+ZaxAssets="*res://src/core/zax_assets.gd"
+ZaxLevels="*res://src/core/zax_levels.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[input]
+
+viewer_reset={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":82,"physical_keycode":0,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 
 [physics]
 

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "source_project": "extract-zax-assets",
+  "source_status": "IDA coverage audit passed with 0 blockers and 0 warnings on 2026-05-05.",
+  "asset_root": "res://assets/zax",
+  "assets": {
+    "manifest_extraction": {
+      "type": "manifest",
+      "path": "res://assets/zax/manifests/extraction_manifest.json",
+      "source": "extract-zax-assets/extracted/manifests/extraction_manifest.json",
+      "sha256": "cacb61b6ab1665e0483962c4ed9ddc8ce45900c952b8625ee776950ba98dd07c"
+    },
+    "manifest_ida_coverage": {
+      "type": "manifest",
+      "path": "res://assets/zax/manifests/ida_asset_coverage_audit.json",
+      "source": "extract-zax-assets/extracted/manifests/ida_asset_coverage_audit.json",
+      "sha256": "0b81843f77dfbafc0f75dff12063c490ae33fd4ee6b7993acd7f137504ab172e"
+    },
+    "level_01_main": {
+      "type": "level",
+      "path": "res://assets/zax/levels/data/01 Main.json",
+      "source": "extract-zax-assets/extracted/levels/data/01 Main.json",
+      "title": "Ship Crash Site",
+      "sha256": "b923332a16e83a81f66e3bcb969d125a6bbefe9e8123e9c6ddc2d5273c9e6112"
+    },
+    "waypoints_01_main": {
+      "type": "waypoints",
+      "path": "res://assets/zax/waypoints/data/01 Main.json",
+      "source": "extract-zax-assets/extracted/waypoints/data/01 Main.json",
+      "sha256": "2a084350b33e903c30f68a55e420178bea1717c278da36043cd55268195b2687"
+    },
+    "texture_01_main": {
+      "type": "texture",
+      "path": "res://assets/zax/textures/data/01 Main.png",
+      "source": "extract-zax-assets/extracted/textures/data/01 Main.png",
+      "width": 176,
+      "height": 121,
+      "sha256": "301b73017248d8283d1f6eb3b2782631e157c756b87464beb6ae17dc41a25fd8"
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-05-05T11:25:41+00:00",
+  "mode": "ida_asset_coverage",
+  "inputs": {
+    "archive_manifest": "extracted/manifests/archive_manifest.json",
+    "extraction_manifest": "extracted/manifests/extraction_manifest.json",
+    "visual_artifact_manifest": "extracted/manifests/visual_artifact_audit.json",
+    "visual_pair_manifest": "extracted/manifests/visual_pair_audit.json"
+  },
+  "ida_source_of_truth": {
+    "binary": "zax/Zax.exe",
+    "idb": "zax/Zax.exe.i64",
+    "loader_evidence": {
+      "frame_variants": {
+        "address": "0x4A9900",
+        "name": "Frame_BuildVariantPath",
+        "extensions": [
+          ".frm",
+          ".frm16",
+          ".frm24",
+          ".frm32"
+        ],
+        "finding": "Chooses frame extension by render depth before dispatching to FRM_LoadFrame."
+      },
+      "frame_loader": {
+        "address": "0x4A9340",
+        "name": "FRM_LoadFrame",
+        "extensions": [
+          ".frm",
+          ".frm16"
+        ],
+        "finding": "Reads the 0x24-byte generic frame header and up to five layer streams plus LUTs."
+      },
+      "sequence_variants": {
+        "address": "0x56B780",
+        "name": "Sequence_BuildPath",
+        "extensions": [
+          ".seq",
+          ".seq16",
+          ".seq24",
+          ".seq32"
+        ],
+        "finding": "Chooses sequence extension by render depth."
+      },
+      "sequence_parser": {
+        "address": "0x55F910",
+        "name": "Sequence_ParseSEQ16",
+        "extensions": [
+          ".seq",
+          ".seq16"
+        ],
+        "finding": "Parses frame presence flags, embedded frame payloads, and per-frame anchor records."
+      },
+      "polygon_variants": {
+        "address": "0x516DA0",
+        "name": "Poly2D_BuildVariantPath",
+        "extensions": [
+          ".mdl",
+          ".mdl16",
+          ".mdl24",
+          ".mdl32"
+        ],
+        "finding": "Chooses MDL variant by render depth; MDL payloads are POLY2D metadata."
+      },
+      "waypoint_loader": {
+        "address": "0x4ECA80",
+        "name": "Level_LoadWaypoints",
+        "extensions": [
+          ".way"
+        ],
+        "finding": "Builds Levels/<map>.way and loads or regenerates waypoint data."
+      },
+      "palette_sound_init": {
+        "address": "0x4CDF70",
+        "name": "GameAsset_InitPalettesAndSounds",
+        "extensions": [
+          ".pal",
+          ".wav",
+          ".ogg"
+        ],
+        "finding": "Initializes Palettes/GamePalette and registers Sounds with WAV/OGG lookup."
+      },
+      "movie_bitmap_fallback": {
+        "address": "0x4CD5A0",
+        "name": "MovieOrSplash_Load",
+        "extensions": [
+          ".bik",
+          ".bmp"
+        ],
+        "finding": "Tries Movies/%s.bik and falls back to Interface/%s.bmp."
+      },
+      "voiceover_paths": {
+        "address": "0x5A4CA0",
+        "name": "DialogVoiceover_Play",
+        "extensions": [
+          ".wav",
+          ".ogg"
+        ],
+        "finding": "Builds %s.wav voiceover candidates and resolves playback through the sound lookup path."
+      },
+      "pk_policy": {
+        "address": "string search + dialog/voiceover xrefs",
+        "name": "PK_PreserveOnly",
+        "extensions": [
+          ".pk"
+        ],
+        "finding": "No direct .pk consumer is proven; shipped sidecars are preserved with metadata only."
+      },
+      "level_text_objects": {
+        "address": "0x4EC090 and text-object registration paths",
+        "name": "LevelAndMetadata_TextObjects",
+        "extensions": [
+          ".zax",
+          ".sty",
+          ".zgt",
+          ".rds",
+          ".quips",
+          ".txt",
+          ".can",
+          ".dificulty",
+          ".foo"
+        ],
+        "finding": "Text-object resources are copied raw and parsed to JSON by the current extraction pass."
+      }
+    }
+  },
+  "archive_summary": {
+    "total_entries": 5838,
+    "by_status": {
+      "verified_existing": 5838
+    }
+  },
+  "extraction_summary": {
+    "total_files": 5840,
+    "by_extension": {
+      ".bik": 4,
+      ".bmp": 3,
+      ".can": 7,
+      ".dificulty": 3,
+      ".foo": 4,
+      ".frm": 361,
+      ".frm16": 366,
+      ".mdl": 1119,
+      ".mdl16": 1119,
+      ".ogg": 1553,
+      ".pal": 9,
+      ".pk": 1,
+      ".quips": 13,
+      ".rds": 48,
+      ".seq": 212,
+      ".seq16": 212,
+      ".sty": 9,
+      ".txt": 276,
+      ".wav": 293,
+      ".way": 112,
+      ".zax": 112,
+      ".zgt": 4
+    },
+    "by_status": {
+      "classified": 1,
+      "converted": 3977,
+      "copied": 1862
+    },
+    "by_category": {
+      "animations": 212,
+      "animations_8bit": 212,
+      "canned_objects": 7,
+      "dialogue": 61,
+      "dialogue_sidecars": 1,
+      "difficulty": 3,
+      "frame_overlays": 4,
+      "game_types": 4,
+      "images": 3,
+      "levels": 112,
+      "palettes": 9,
+      "polygons": 2238,
+      "sounds": 1846,
+      "surface_types": 9,
+      "text": 276,
+      "textures": 366,
+      "textures_8bit": 361,
+      "videos": 4,
+      "waypoints": 112
+    }
+  },
+  "visual_artifact_summary": {
+    "entry_count": 1151,
+    "by_status": {
+      "audited": 1151
+    },
+    "by_type": {
+      "frm": 361,
+      "frm16": 366,
+      "seq": 212,
+      "seq16": 212
+    },
+    "suspicious_count": 0,
+    "by_suspicious_reason": {}
+  },
+  "visual_pair_summary": {
+    "entry_count": 579,
+    "matched_pair_count": 572,
+    "unmatched_count": 7,
+    "suspicious_count": 0,
+    "needs_review_count": 0,
+    "by_status": {
+      "paired": 572,
+      "unmatched": 7
+    },
+    "by_pair_type": {
+      "frame": 367,
+      "sequence": 212
+    },
+    "by_classification": {
+      "matched_visual_variant": 532,
+      "source_runtime_variant_difference": 40,
+      "unpaired_visual_variant": 7
+    },
+    "by_suspicious_reason": {},
+    "by_review_reason": {},
+    "by_classified_reason": {
+      "frame_runtime_only_visible_pixels": 2,
+      "frame_visible_bbox_area_ratio": 39,
+      "unpaired_visual_variant": 7,
+      "visible_bbox_area_ratio": 1
+    }
+  },
+  "source_reconciliation": {
+    "archive_record_count": 5838,
+    "generated_properties_sidecar_count": 2,
+    "expected_source_count": 5840,
+    "extraction_source_count": 5840,
+    "missing_source_count": 0,
+    "extra_source_count": 0,
+    "missing_sources": [],
+    "extra_sources": []
+  },
+  "extension_reconciliation": {
+    "archive_by_extension": {
+      ".bik": 4,
+      ".bmp": 3,
+      ".can": 7,
+      ".dificulty": 3,
+      ".foo": 4,
+      ".frm": 361,
+      ".frm16": 366,
+      ".mdl": 1119,
+      ".mdl16": 1119,
+      ".ogg": 1553,
+      ".pal": 9,
+      ".pk": 1,
+      ".quips": 13,
+      ".rds": 48,
+      ".seq": 212,
+      ".seq16": 212,
+      ".sty": 9,
+      ".txt": 274,
+      ".wav": 293,
+      ".way": 112,
+      ".zax": 112,
+      ".zgt": 4
+    },
+    "supported_shipped_extensions": [
+      ".bik",
+      ".bmp",
+      ".can",
+      ".dificulty",
+      ".foo",
+      ".frm",
+      ".frm16",
+      ".mdl",
+      ".mdl16",
+      ".ogg",
+      ".pal",
+      ".pk",
+      ".quips",
+      ".rds",
+      ".seq",
+      ".seq16",
+      ".sty",
+      ".txt",
+      ".wav",
+      ".way",
+      ".zax",
+      ".zgt"
+    ],
+    "engine_supported_absent_variants": [
+      {
+        "extension": ".frm24",
+        "status": "engine_supported_absent_from_shipped_archives"
+      },
+      {
+        "extension": ".frm32",
+        "status": "engine_supported_absent_from_shipped_archives"
+      },
+      {
+        "extension": ".mdl24",
+        "status": "engine_supported_absent_from_shipped_archives"
+      },
+      {
+        "extension": ".mdl32",
+        "status": "engine_supported_absent_from_shipped_archives"
+      },
+      {
+        "extension": ".seq24",
+        "status": "engine_supported_absent_from_shipped_archives"
+      },
+      {
+        "extension": ".seq32",
+        "status": "engine_supported_absent_from_shipped_archives"
+      }
+    ],
+    "unsupported_shipped_extensions": {},
+    "shipped_unimplemented_engine_variants": {}
+  },
+  "output_reconciliation": {
+    "declared_output_count": 22266,
+    "missing_output_count": 0,
+    "missing_outputs": []
+  },
+  "visual_reconciliation": {
+    "visual_source_count": 1151,
+    "expected_pair_entry_count": 579,
+    "artifact_manifest_entry_count": 1151,
+    "pair_manifest_entry_count": 579
+  },
+  "issues": [],
+  "summary": {
+    "status": "ok",
+    "blocker_count": 0,
+    "warning_count": 0,
+    "archive_entry_count": 5838,
+    "generated_properties_sidecar_count": 2,
+    "extraction_entry_count": 5840,
+    "missing_source_count": 0,
+    "missing_output_count": 0,
+    "visual_artifact_suspicious_count": 0,
+    "visual_pair_needs_review_count": 0,
+    "visual_pair_suspicious_count": 0
+  }
+}
