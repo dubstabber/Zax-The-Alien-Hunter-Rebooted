@@ -1,0 +1,59 @@
+{
+  "source": "zax-assets/data/Barrel Tree 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 215,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 10,
+  "vertices": [
+    {
+      "x": 26.0,
+      "y": 51.0
+    },
+    {
+      "x": 18.0,
+      "y": 48.0
+    },
+    {
+      "x": 14.0,
+      "y": 41.0
+    },
+    {
+      "x": 18.0,
+      "y": 34.0
+    },
+    {
+      "x": 27.0,
+      "y": 30.0
+    },
+    {
+      "x": 38.0,
+      "y": 33.0
+    },
+    {
+      "x": 41.0,
+      "y": 38.0
+    },
+    {
+      "x": 40.0,
+      "y": 45.0
+    },
+    {
+      "x": 34.0,
+      "y": 51.0
+    },
+    {
+      "x": 26.0,
+      "y": 51.0
+    }
+  ],
+  "bounds": {
+    "min_x": 14.0,
+    "min_y": 30.0,
+    "max_x": 41.0,
+    "max_y": 51.0
+  },
+  "prefix_size": 215,
+  "trailing_size": 15374
+}

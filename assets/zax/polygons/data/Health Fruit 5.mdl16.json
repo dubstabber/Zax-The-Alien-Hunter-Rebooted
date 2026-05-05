@@ -1,0 +1,35 @@
+{
+  "source": "zax-assets/data/Health Fruit 5.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 306,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 4,
+  "vertices": [
+    {
+      "x": -5.0,
+      "y": 7.0
+    },
+    {
+      "x": 0.0,
+      "y": 1.0
+    },
+    {
+      "x": 5.0,
+      "y": 8.0
+    },
+    {
+      "x": -5.0,
+      "y": 7.0
+    }
+  ],
+  "bounds": {
+    "min_x": -5.0,
+    "min_y": 1.0,
+    "max_x": 5.0,
+    "max_y": 8.0
+  },
+  "prefix_size": 306,
+  "trailing_size": 1001
+}

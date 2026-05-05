@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Under Temple Entrance 1 Door.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 649,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": 13.0,
+      "y": 89.0
+    },
+    {
+      "x": -51.0,
+      "y": 61.0
+    },
+    {
+      "x": -41.0,
+      "y": 51.0
+    },
+    {
+      "x": 23.0,
+      "y": 78.0
+    },
+    {
+      "x": 13.0,
+      "y": 89.0
+    }
+  ],
+  "bounds": {
+    "min_x": -51.0,
+    "min_y": 51.0,
+    "max_x": 23.0,
+    "max_y": 89.0
+  },
+  "prefix_size": 649,
+  "trailing_size": 144831
+}

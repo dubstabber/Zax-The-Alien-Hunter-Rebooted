@@ -1,0 +1,51 @@
+{
+  "source": "zax-assets/data/Leaf Tree 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 213,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 8,
+  "vertices": [
+    {
+      "x": 42.0,
+      "y": 81.0
+    },
+    {
+      "x": 33.0,
+      "y": 81.0
+    },
+    {
+      "x": 28.0,
+      "y": 76.0
+    },
+    {
+      "x": 29.0,
+      "y": 68.0
+    },
+    {
+      "x": 38.0,
+      "y": 63.0
+    },
+    {
+      "x": 48.0,
+      "y": 69.0
+    },
+    {
+      "x": 48.0,
+      "y": 77.0
+    },
+    {
+      "x": 42.0,
+      "y": 81.0
+    }
+  ],
+  "bounds": {
+    "min_x": 28.0,
+    "min_y": 63.0,
+    "max_x": 48.0,
+    "max_y": 81.0
+  },
+  "prefix_size": 213,
+  "trailing_size": 56291
+}

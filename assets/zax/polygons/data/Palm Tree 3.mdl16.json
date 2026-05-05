@@ -1,0 +1,43 @@
+{
+  "source": "zax-assets/data/Palm Tree 3.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 213,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 6,
+  "vertices": [
+    {
+      "x": 36.0,
+      "y": 72.0
+    },
+    {
+      "x": 30.0,
+      "y": 69.0
+    },
+    {
+      "x": 30.0,
+      "y": 61.0
+    },
+    {
+      "x": 38.0,
+      "y": 60.0
+    },
+    {
+      "x": 42.0,
+      "y": 67.0
+    },
+    {
+      "x": 36.0,
+      "y": 72.0
+    }
+  ],
+  "bounds": {
+    "min_x": 30.0,
+    "min_y": 60.0,
+    "max_x": 42.0,
+    "max_y": 72.0
+  },
+  "prefix_size": 213,
+  "trailing_size": 23358
+}

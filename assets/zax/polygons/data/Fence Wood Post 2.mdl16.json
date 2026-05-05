@@ -1,0 +1,59 @@
+{
+  "source": "zax-assets/data/Fence Wood Post 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 219,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 10,
+  "vertices": [
+    {
+      "x": 43.0,
+      "y": 48.0
+    },
+    {
+      "x": 47.0,
+      "y": 39.0
+    },
+    {
+      "x": 58.0,
+      "y": 35.0
+    },
+    {
+      "x": 69.0,
+      "y": 38.0
+    },
+    {
+      "x": 73.0,
+      "y": 46.0
+    },
+    {
+      "x": 71.0,
+      "y": 56.0
+    },
+    {
+      "x": 62.0,
+      "y": 63.0
+    },
+    {
+      "x": 52.0,
+      "y": 63.0
+    },
+    {
+      "x": 45.0,
+      "y": 58.0
+    },
+    {
+      "x": 43.0,
+      "y": 48.0
+    }
+  ],
+  "bounds": {
+    "min_x": 43.0,
+    "min_y": 35.0,
+    "max_x": 73.0,
+    "max_y": 63.0
+  },
+  "prefix_size": 219,
+  "trailing_size": 21143
+}

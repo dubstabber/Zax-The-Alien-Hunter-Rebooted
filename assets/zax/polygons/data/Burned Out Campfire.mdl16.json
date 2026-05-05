@@ -1,0 +1,55 @@
+{
+  "source": "zax-assets/data/Burned Out Campfire.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 1830,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 9,
+  "vertices": [
+    {
+      "x": -14.0,
+      "y": 18.0
+    },
+    {
+      "x": -27.0,
+      "y": 5.0
+    },
+    {
+      "x": -21.0,
+      "y": -14.0
+    },
+    {
+      "x": -3.0,
+      "y": -18.0
+    },
+    {
+      "x": 17.0,
+      "y": -18.0
+    },
+    {
+      "x": 28.0,
+      "y": -1.0
+    },
+    {
+      "x": 18.0,
+      "y": 12.0
+    },
+    {
+      "x": 1.0,
+      "y": 18.0
+    },
+    {
+      "x": -14.0,
+      "y": 18.0
+    }
+  ],
+  "bounds": {
+    "min_x": -27.0,
+    "min_y": -18.0,
+    "max_x": 28.0,
+    "max_y": 18.0
+  },
+  "prefix_size": 1830,
+  "trailing_size": 22989
+}

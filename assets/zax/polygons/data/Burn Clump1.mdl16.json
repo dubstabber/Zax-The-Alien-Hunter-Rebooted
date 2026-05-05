@@ -1,0 +1,51 @@
+{
+  "source": "zax-assets/data/Burn Clump1.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 183,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 8,
+  "vertices": [
+    {
+      "x": 46.0,
+      "y": 39.0
+    },
+    {
+      "x": 18.0,
+      "y": 51.0
+    },
+    {
+      "x": -20.0,
+      "y": 39.0
+    },
+    {
+      "x": -32.0,
+      "y": 19.0
+    },
+    {
+      "x": -17.0,
+      "y": 4.0
+    },
+    {
+      "x": 23.0,
+      "y": 7.0
+    },
+    {
+      "x": 47.0,
+      "y": 19.0
+    },
+    {
+      "x": 46.0,
+      "y": 39.0
+    }
+  ],
+  "bounds": {
+    "min_x": -32.0,
+    "min_y": 4.0,
+    "max_x": 47.0,
+    "max_y": 51.0
+  },
+  "prefix_size": 183,
+  "trailing_size": 26662
+}

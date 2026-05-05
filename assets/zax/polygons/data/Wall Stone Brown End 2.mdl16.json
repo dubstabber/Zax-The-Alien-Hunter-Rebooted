@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Wall Stone Brown End 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 224,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": -6.0,
+      "y": 55.0
+    },
+    {
+      "x": -28.0,
+      "y": 25.0
+    },
+    {
+      "x": 16.0,
+      "y": 0.0
+    },
+    {
+      "x": 45.0,
+      "y": 27.0
+    },
+    {
+      "x": -6.0,
+      "y": 55.0
+    }
+  ],
+  "bounds": {
+    "min_x": -28.0,
+    "min_y": 0.0,
+    "max_x": 45.0,
+    "max_y": 55.0
+  },
+  "prefix_size": 224,
+  "trailing_size": 17172
+}

@@ -1,0 +1,43 @@
+{
+  "source": "zax-assets/data/Ore deposit 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 445,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 6,
+  "vertices": [
+    {
+      "x": -3.0,
+      "y": 6.0
+    },
+    {
+      "x": -10.0,
+      "y": 1.0
+    },
+    {
+      "x": -4.0,
+      "y": -3.0
+    },
+    {
+      "x": 3.0,
+      "y": -1.0
+    },
+    {
+      "x": 3.0,
+      "y": 5.0
+    },
+    {
+      "x": -3.0,
+      "y": 6.0
+    }
+  ],
+  "bounds": {
+    "min_x": -10.0,
+    "min_y": -3.0,
+    "max_x": 3.0,
+    "max_y": 6.0
+  },
+  "prefix_size": 445,
+  "trailing_size": 697
+}

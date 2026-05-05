@@ -1,0 +1,13 @@
+{
+  "source": "zax-assets/data/RockyPieces10.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 185,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 0,
+  "vertices": [],
+  "bounds": null,
+  "prefix_size": 185,
+  "trailing_size": 10096
+}

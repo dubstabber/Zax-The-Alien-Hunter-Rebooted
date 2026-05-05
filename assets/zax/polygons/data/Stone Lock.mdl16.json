@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Stone Lock.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 503,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": -2.0,
+      "y": 21.0
+    },
+    {
+      "x": -17.0,
+      "y": 7.0
+    },
+    {
+      "x": -2.0,
+      "y": -2.0
+    },
+    {
+      "x": 14.0,
+      "y": 11.0
+    },
+    {
+      "x": -2.0,
+      "y": 21.0
+    }
+  ],
+  "bounds": {
+    "min_x": -17.0,
+    "min_y": -2.0,
+    "max_x": 14.0,
+    "max_y": 21.0
+  },
+  "prefix_size": 503,
+  "trailing_size": 113447
+}

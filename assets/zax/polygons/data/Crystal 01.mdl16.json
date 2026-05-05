@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Crystal 01.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 455,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": -5.0,
+      "y": 6.0
+    },
+    {
+      "x": 1.0,
+      "y": -3.0
+    },
+    {
+      "x": 5.0,
+      "y": 4.0
+    },
+    {
+      "x": 3.0,
+      "y": 9.0
+    },
+    {
+      "x": -5.0,
+      "y": 6.0
+    }
+  ],
+  "bounds": {
+    "min_x": -5.0,
+    "min_y": -3.0,
+    "max_x": 5.0,
+    "max_y": 9.0
+  },
+  "prefix_size": 455,
+  "trailing_size": 9414
+}

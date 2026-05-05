@@ -1,0 +1,13 @@
+{
+  "source": "zax-assets/data/Position Marker.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 389,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 0,
+  "vertices": [],
+  "bounds": null,
+  "prefix_size": 389,
+  "trailing_size": 1162
+}

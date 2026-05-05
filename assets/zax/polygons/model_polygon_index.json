@@ -1,0 +1,1793 @@
+{
+  "schema_version": 1,
+  "source_level": "res://assets/zax/levels/data/01 Main.json",
+  "source_project": "extract-zax-assets",
+  "polygon_variant": "mdl16",
+  "model_count": 141,
+  "models": {
+    "Characters/Fire Flys": {
+      "basename": "Fire Flys",
+      "path": "res://assets/zax/polygons/data/Fire Flys.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fire Flys.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "5d28101a99b46c7a30cb4d4030436dad2e8648aa8bc1aea6eb8e3944edb80726"
+    },
+    "Characters/Jungle Bird": {
+      "basename": "Jungle Bird",
+      "path": "res://assets/zax/polygons/data/Jungle Bird.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle Bird.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "0d2ef4e3bf3d9252b22ff4b43077fe1e4e528eeeef6f2ec4ee6920abd135ac66"
+    },
+    "Characters/Jungle Creature": {
+      "basename": "Jungle Creature",
+      "path": "res://assets/zax/polygons/data/Jungle Creature.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle Creature.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 11,
+      "bounds": {
+        "min_x": -26.5,
+        "min_y": -17.96380043029785,
+        "max_x": 26.5,
+        "max_y": 17.96380043029785
+      },
+      "sha256": "03626fdc0154d0bde9073d0511cae0f36ae148f81ff965dadd7751dd1d2caaf2"
+    },
+    "Characters/Korbo Characters/Valeth": {
+      "basename": "Valeth",
+      "path": "res://assets/zax/polygons/data/Valeth.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Valeth.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -12.5,
+        "min_y": 5.090429782867432,
+        "max_x": 12.5,
+        "max_y": 22.90959930419922
+      },
+      "sha256": "5eb15f0b1250ea78055542b6456a8868ca23bb6aaddca2b9370cfde47f15d22e"
+    },
+    "Characters/Rogcoil/Rogcoil": {
+      "basename": "Rogcoil",
+      "path": "res://assets/zax/polygons/data/Rogcoil.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rogcoil.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -18.0,
+        "min_y": -12.82979965209961,
+        "max_x": 18.0,
+        "max_y": 12.82979965209961
+      },
+      "sha256": "2c68a7f04a740a627473a1712314ed926b50a99a08f9dad15a518b58791365ab"
+    },
+    "Characters/Targ": {
+      "basename": "Targ",
+      "path": "res://assets/zax/polygons/data/Targ.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Targ.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -18.0,
+        "min_y": 10.17080020904541,
+        "max_x": 18.0,
+        "max_y": 35.83039855957031
+      },
+      "sha256": "2f7fa8347450b60e8520be423c12556365b2533a52ce33b1da76e878985b88b5"
+    },
+    "Editor/Position Marker": {
+      "basename": "Position Marker",
+      "path": "res://assets/zax/polygons/data/Position Marker.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Position Marker.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "cd31378d4577bc9cea0ac3fa2f43a25bb3b0e55fc282dea1517eced86167d009"
+    },
+    "Editor/Relay": {
+      "basename": "Relay",
+      "path": "res://assets/zax/polygons/data/Relay.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Relay.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "0db781e2c12bb2ed6139d370c5a3bf2a1b99d17cc1231a276fdc0a4b1073a308"
+    },
+    "Editor/Sound": {
+      "basename": "Sound",
+      "path": "res://assets/zax/polygons/data/Sound.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Sound.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "64239a61ed66af05e2c7bfef53290cd249d45c8cebad61c2c60a2e808de92788"
+    },
+    "Editor/Spawn Point": {
+      "basename": "Spawn Point",
+      "path": "res://assets/zax/polygons/data/Spawn Point.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Spawn Point.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "98e52d105c69ad209c0a66ce9cc9cc01fa2f69ee2bfc402beb26d8ca0e08010b"
+    },
+    "Editor/Trigger Icon, Proximity": {
+      "basename": "Trigger Icon, Proximity",
+      "path": "res://assets/zax/polygons/data/Trigger Icon, Proximity.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Trigger Icon, Proximity.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "1547c86a319c0929fb822b9fb46eb77804e042185b4bcf732abf5c488ff1fee6"
+    },
+    "Environments/CrashDebris/RockyPieces1": {
+      "basename": "RockyPieces1",
+      "path": "res://assets/zax/polygons/data/RockyPieces1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "cc2b509322120a98220535e0a1b7539fd1cb8fbe78d1fd841f6dc489b303d331"
+    },
+    "Environments/CrashDebris/RockyPieces10": {
+      "basename": "RockyPieces10",
+      "path": "res://assets/zax/polygons/data/RockyPieces10.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces10.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "d3e047c932b1100303680605fce49fc03748c1541d986cf3df692269dba726d5"
+    },
+    "Environments/CrashDebris/RockyPieces11": {
+      "basename": "RockyPieces11",
+      "path": "res://assets/zax/polygons/data/RockyPieces11.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces11.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "b94a8f451c0d8bb4e862c8269107760e7b9fd39bcd5b56b738b973432dbd9cbb"
+    },
+    "Environments/CrashDebris/RockyPieces12": {
+      "basename": "RockyPieces12",
+      "path": "res://assets/zax/polygons/data/RockyPieces12.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces12.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "512f4669fb1b9ac4aa0a7e8d62f3f2d679c6d13bcd3e5d1ced086481a977b4a4"
+    },
+    "Environments/CrashDebris/RockyPieces2": {
+      "basename": "RockyPieces2",
+      "path": "res://assets/zax/polygons/data/RockyPieces2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "f5085f4f5722f3cfb8777b13151a0e80ca4c4cfa66013b7d8cc548398058ec57"
+    },
+    "Environments/CrashDebris/RockyPieces3": {
+      "basename": "RockyPieces3",
+      "path": "res://assets/zax/polygons/data/RockyPieces3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "de6363216617d28358c691f92a85c33b9dd06330f066fd16ed0fc3083d10c88d"
+    },
+    "Environments/CrashDebris/RockyPieces4": {
+      "basename": "RockyPieces4",
+      "path": "res://assets/zax/polygons/data/RockyPieces4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "c82c5ea479df28277225f3ebb52631c72e923dd0acc154e474868e7dca1fb5d2"
+    },
+    "Environments/CrashDebris/RockyPieces5": {
+      "basename": "RockyPieces5",
+      "path": "res://assets/zax/polygons/data/RockyPieces5.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces5.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "e1c9802b23651f0727362bf02b4570f7c1aa29fcb0c75d08263a85051b97114d"
+    },
+    "Environments/CrashDebris/RockyPieces6": {
+      "basename": "RockyPieces6",
+      "path": "res://assets/zax/polygons/data/RockyPieces6.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces6.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "c1d93c796afc5c7434f69c74a415d93b134e84b1dbae2cf50cd494a314760c8f"
+    },
+    "Environments/CrashDebris/RockyPieces7": {
+      "basename": "RockyPieces7",
+      "path": "res://assets/zax/polygons/data/RockyPieces7.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces7.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "65610b632fdf949bd0de2d8b0513d02e94f014dd5406ef6e9c28d72cc4f7558d"
+    },
+    "Environments/CrashDebris/RockyPieces8": {
+      "basename": "RockyPieces8",
+      "path": "res://assets/zax/polygons/data/RockyPieces8.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces8.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "de7cfd8c1b906f720cbb1454cf22934119bab7f79eb653ad07b8bc1408d39612"
+    },
+    "Environments/CrashDebris/RockyPieces9": {
+      "basename": "RockyPieces9",
+      "path": "res://assets/zax/polygons/data/RockyPieces9.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockyPieces9.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "8e2775a283842c2f7f72aa211d049da7e4cee3c9dc4b198e391f0ed88afa079c"
+    },
+    "Environments/CrashDebris/ScorchGround1": {
+      "basename": "ScorchGround1",
+      "path": "res://assets/zax/polygons/data/ScorchGround1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/ScorchGround1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "502fcb458299bac954d8f0cbbeb3481796a72be74dae88a731a635352150094b"
+    },
+    "Environments/CrashDebris/ScorchGround2": {
+      "basename": "ScorchGround2",
+      "path": "res://assets/zax/polygons/data/ScorchGround2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/ScorchGround2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "7e80ffd3551b28fe4ee0eb3a9a100269c0d28c0aec3bfde902f7768b8866c69e"
+    },
+    "Environments/CrashDebris/ScorchGround3": {
+      "basename": "ScorchGround3",
+      "path": "res://assets/zax/polygons/data/ScorchGround3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/ScorchGround3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "00ba3418ea660b7420d96797e48af181fbba5be18500d3d148a1cb2328b1a52f"
+    },
+    "Environments/CrashDebris/ScorchGround4": {
+      "basename": "ScorchGround4",
+      "path": "res://assets/zax/polygons/data/ScorchGround4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/ScorchGround4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "b15053f3445190559c9b5671436c6dc105ef04659ec365d6ba1dbe3da75fd254"
+    },
+    "Environments/CrashDebris/ScorchGround5": {
+      "basename": "ScorchGround5",
+      "path": "res://assets/zax/polygons/data/ScorchGround5.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/ScorchGround5.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "3acf1f70e31f25b3392fd68871c332938d3fc3060bc39d9cbbba102c3af40c7c"
+    },
+    "Environments/General/Burned Out Campfire": {
+      "basename": "Burned Out Campfire",
+      "path": "res://assets/zax/polygons/data/Burned Out Campfire.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burned Out Campfire.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -27.0,
+        "min_y": -18.0,
+        "max_x": 28.0,
+        "max_y": 18.0
+      },
+      "sha256": "89ead5d7762d42828ba95772dc7a83d570500497fc7009fb8ca239a230b5d20e"
+    },
+    "Environments/General/Torch 1": {
+      "basename": "Torch 1",
+      "path": "res://assets/zax/polygons/data/Torch 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Torch 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": 6.0,
+        "min_y": 43.0,
+        "max_x": 13.0,
+        "max_y": 51.0
+      },
+      "sha256": "c1832f22cce8507d8b7b34ade659da3dd76b0e4b442160d992f985880bcfba24"
+    },
+    "Environments/General/jungle dirt 2": {
+      "basename": "jungle dirt 2",
+      "path": "res://assets/zax/polygons/data/jungle dirt 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/jungle dirt 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "0646f5d07613d22e4707161e6b266b1cc2f04a55d39356066853c5da77ccec1b"
+    },
+    "Environments/Jungle/Bushes/Burn Clump1": {
+      "basename": "Burn Clump1",
+      "path": "res://assets/zax/polygons/data/Burn Clump1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Clump1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": -32.0,
+        "min_y": 4.0,
+        "max_x": 47.0,
+        "max_y": 51.0
+      },
+      "sha256": "392c43496d3d46be3dbddd83142c3f3a9c8620a2b0a1ac110363b7ffd2de5009"
+    },
+    "Environments/Jungle/Bushes/Bush Large 1": {
+      "basename": "Bush Large 1",
+      "path": "res://assets/zax/polygons/data/Bush Large 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Bush Large 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 3.0,
+        "min_y": -5.0,
+        "max_x": 55.0,
+        "max_y": 36.0
+      },
+      "sha256": "c6bfc5dd79d997ea94211972f49d4cf454674194adde97a193a2ca41f6ec54de"
+    },
+    "Environments/Jungle/Bushes/Bush Large 2": {
+      "basename": "Bush Large 2",
+      "path": "res://assets/zax/polygons/data/Bush Large 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Bush Large 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -7.0,
+        "min_y": 3.0,
+        "max_x": 62.0,
+        "max_y": 46.0
+      },
+      "sha256": "8614160aee092a8a375c9c919d9905940f63cf9862835580af5e65e889271b4b"
+    },
+    "Environments/Jungle/Bushes/Bush Large 3": {
+      "basename": "Bush Large 3",
+      "path": "res://assets/zax/polygons/data/Bush Large 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Bush Large 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -1.0,
+        "min_y": 5.0,
+        "max_x": 59.0,
+        "max_y": 43.0
+      },
+      "sha256": "3903e6272cd8fb9fb5b18b16f70c3a7ba25a0586eef904cf36bd141963b13889"
+    },
+    "Environments/Jungle/Bushes/Water Reed 1": {
+      "basename": "Water Reed 1",
+      "path": "res://assets/zax/polygons/data/Water Reed 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Reed 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "67e953720d8f5154bd0d976866ae42390ed83b975256c328c1746f42003765bb"
+    },
+    "Environments/Jungle/Bushes/Water Reed 2": {
+      "basename": "Water Reed 2",
+      "path": "res://assets/zax/polygons/data/Water Reed 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Reed 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "b9e3dc70d1fc169e7f7f1af6e605cb05b4c5f3d0069bd14c72e9aaaff3d426d2"
+    },
+    "Environments/Jungle/Bushes/Water Reed 3": {
+      "basename": "Water Reed 3",
+      "path": "res://assets/zax/polygons/data/Water Reed 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Reed 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "9a97793b15c1d30a284c65e859e4691010b3965d5553711eae729fc236fa3dd1"
+    },
+    "Environments/Jungle/Bushes/Water Reed 4": {
+      "basename": "Water Reed 4",
+      "path": "res://assets/zax/polygons/data/Water Reed 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Reed 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "f707555960fe4d3ecab088706f010e833e110ec4d3a41981709e053533af2116"
+    },
+    "Environments/Jungle/Bushes/bush burn 02": {
+      "basename": "bush burn 02",
+      "path": "res://assets/zax/polygons/data/bush burn 02.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/bush burn 02.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -23.0,
+        "min_y": -24.0,
+        "max_x": 59.0,
+        "max_y": 35.0
+      },
+      "sha256": "9282682bae5348c7265a54a3864ef0d5e2f0c57acb114d66939a3c77c09aaf9d"
+    },
+    "Environments/Jungle/Doors/Wall Stone Brown Door 1": {
+      "basename": "Wall Stone Brown Door 1",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brown Door 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brown Door 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -44.0,
+        "min_y": -9.0,
+        "max_x": 47.0,
+        "max_y": 68.0
+      },
+      "sha256": "fb184e83286333662f56daa309f23cb6a81aa0de362f1d8e6944394785e90711"
+    },
+    "Environments/Jungle/Entrances/Cave Entrance 1": {
+      "basename": "Cave Entrance 1",
+      "path": "res://assets/zax/polygons/data/Cave Entrance 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Cave Entrance 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 20,
+      "bounds": {
+        "min_x": -171.0,
+        "min_y": -54.0,
+        "max_x": 194.0,
+        "max_y": 168.0
+      },
+      "sha256": "a30565e7a27f335c1dc3e9c95481a00e9fc27b8b2d3b36b22f5aaa21b466f23e"
+    },
+    "Environments/Jungle/Entrances/Cave Entrance 2": {
+      "basename": "Cave Entrance 2",
+      "path": "res://assets/zax/polygons/data/Cave Entrance 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Cave Entrance 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 15,
+      "bounds": {
+        "min_x": -131.0,
+        "min_y": -54.0,
+        "max_x": 158.0,
+        "max_y": 138.0
+      },
+      "sha256": "a18d8f5202eed914905022a98bddfbe4511d9050fc7b0590a5e1a0f283f7af20"
+    },
+    "Environments/Jungle/Entrances/Cave Entrance Rock 1": {
+      "basename": "Cave Entrance Rock 1",
+      "path": "res://assets/zax/polygons/data/Cave Entrance Rock 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Cave Entrance Rock 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 18,
+      "bounds": {
+        "min_x": -110.0,
+        "min_y": -32.0,
+        "max_x": 147.0,
+        "max_y": 130.0
+      },
+      "sha256": "b3738b7787ffa032ebcb9726ef78839324e10016fb17279eda0792978eced5b4"
+    },
+    "Environments/Jungle/Entrances/Targ Hole Entrance 2": {
+      "basename": "Targ Hole Entrance 2",
+      "path": "res://assets/zax/polygons/data/Targ Hole Entrance 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Targ Hole Entrance 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 15,
+      "bounds": {
+        "min_x": -95.0,
+        "min_y": -63.0,
+        "max_x": 98.0,
+        "max_y": 90.0
+      },
+      "sha256": "7ea1e8388891e01c8fa87985b4d708f92ff04f8c59ba5104af8879f6f7951796"
+    },
+    "Environments/Jungle/Entrances/Targ Hole Entrance 3": {
+      "basename": "Targ Hole Entrance 3",
+      "path": "res://assets/zax/polygons/data/Targ Hole Entrance 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Targ Hole Entrance 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 16,
+      "bounds": {
+        "min_x": -89.0,
+        "min_y": -87.0,
+        "max_x": 100.0,
+        "max_y": 78.0
+      },
+      "sha256": "c7bf21ab7750f151da7af4cd9e9a2780cc4cba5c8e2c83fe79a0269addb93f2b"
+    },
+    "Environments/Jungle/Fences/Fence Wood Post 1": {
+      "basename": "Fence Wood Post 1",
+      "path": "res://assets/zax/polygons/data/Fence Wood Post 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fence Wood Post 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 16.0,
+        "min_y": 62.0,
+        "max_x": 46.0,
+        "max_y": 87.0
+      },
+      "sha256": "5d12b3a4fff938aa04f7ae678fc5858c679469c0a889502247ea559e6ffef002"
+    },
+    "Environments/Jungle/Fences/Fence Wood Post 2": {
+      "basename": "Fence Wood Post 2",
+      "path": "res://assets/zax/polygons/data/Fence Wood Post 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fence Wood Post 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 10,
+      "bounds": {
+        "min_x": 43.0,
+        "min_y": 35.0,
+        "max_x": 73.0,
+        "max_y": 63.0
+      },
+      "sha256": "8e7023119bb233a47672cf98aa5266347cf16410566b07b552619ca3862cd0b6"
+    },
+    "Environments/Jungle/Rocks/BlastoutRocks/GrndRock": {
+      "basename": "GrndRock",
+      "path": "res://assets/zax/polygons/data/GrndRock.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/GrndRock.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "8259a5056401aa6a3121cb5027fddc4d83c54398ef8b49d6328db69e4720ff92"
+    },
+    "Environments/Jungle/Rocks/BlastoutRocks/RockLower": {
+      "basename": "RockLower",
+      "path": "res://assets/zax/polygons/data/RockLower.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockLower.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -1.0,
+        "min_y": 12.0,
+        "max_x": 179.0,
+        "max_y": 117.0
+      },
+      "sha256": "b61a15edebf30433dc31aef7ca4503c427f6db885dca041218fb13ee899636ba"
+    },
+    "Environments/Jungle/Rocks/BlastoutRocks/RockUpper": {
+      "basename": "RockUpper",
+      "path": "res://assets/zax/polygons/data/RockUpper.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/RockUpper.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 16,
+      "bounds": {
+        "min_x": -130.0,
+        "min_y": -144.0,
+        "max_x": 122.0,
+        "max_y": -1.0
+      },
+      "sha256": "0cf1140c02b51587111fcd06e760bbaa1e1296d601238c31d286a5dc7eb976ae"
+    },
+    "Environments/Jungle/Rocks/Rock 1": {
+      "basename": "Rock 1",
+      "path": "res://assets/zax/polygons/data/Rock 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -71.0,
+        "min_y": -25.0,
+        "max_x": 90.0,
+        "max_y": 57.0
+      },
+      "sha256": "28070a572e76da6661dea49e143bb4e9df05a8975e3e24a3cbe5f0b8dfd5e641"
+    },
+    "Environments/Jungle/Rocks/Rock 2": {
+      "basename": "Rock 2",
+      "path": "res://assets/zax/polygons/data/Rock 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -83.0,
+        "min_y": -50.0,
+        "max_x": 74.0,
+        "max_y": 50.0
+      },
+      "sha256": "32b95cfbe635569c2442e50786bf054ffe04f93ef49d5a51b7d2945db27f0aa6"
+    },
+    "Environments/Jungle/Rocks/Rock 3": {
+      "basename": "Rock 3",
+      "path": "res://assets/zax/polygons/data/Rock 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -67.0,
+        "min_y": -34.0,
+        "max_x": 71.0,
+        "max_y": 85.0
+      },
+      "sha256": "34e4717302d1a945e6120b91f3ae239769012c4261e7fc746d8591243afce293"
+    },
+    "Environments/Jungle/Rocks/Rock Shelf 1": {
+      "basename": "Rock Shelf 1",
+      "path": "res://assets/zax/polygons/data/Rock Shelf 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock Shelf 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 14,
+      "bounds": {
+        "min_x": -74.0,
+        "min_y": -81.0,
+        "max_x": 96.0,
+        "max_y": 100.0
+      },
+      "sha256": "93e178ba06009ecf972ba3f42c00ef6c6a7001d8e88d1395c6fb13d3d480e731"
+    },
+    "Environments/Jungle/Rocks/Rock Shelf 2": {
+      "basename": "Rock Shelf 2",
+      "path": "res://assets/zax/polygons/data/Rock Shelf 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock Shelf 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 14,
+      "bounds": {
+        "min_x": -73.0,
+        "min_y": -76.0,
+        "max_x": 99.0,
+        "max_y": 93.0
+      },
+      "sha256": "bcf4cc29865656184955afa1742cf706da8f5e2391c746e6867f3b248c6ab8bb"
+    },
+    "Environments/Jungle/Rocks/Rock Shelf 3": {
+      "basename": "Rock Shelf 3",
+      "path": "res://assets/zax/polygons/data/Rock Shelf 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock Shelf 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 17,
+      "bounds": {
+        "min_x": -93.0,
+        "min_y": -70.0,
+        "max_x": 119.0,
+        "max_y": 89.0
+      },
+      "sha256": "c87cb28a44ee3360452bc94fb8cacf2c47dfdb92123ce71bcb4a63ba4d73cb56"
+    },
+    "Environments/Jungle/Rocks/Rock Shelf 4": {
+      "basename": "Rock Shelf 4",
+      "path": "res://assets/zax/polygons/data/Rock Shelf 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Rock Shelf 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 14,
+      "bounds": {
+        "min_x": -46.0,
+        "min_y": -93.0,
+        "max_x": 133.0,
+        "max_y": 95.0
+      },
+      "sha256": "d6602f3ec9e4af3471a94d4ffbf642f0aa5b258e1ecc8073ebd7a0ceef1581c8"
+    },
+    "Environments/Jungle/Switches/Stone Lock": {
+      "basename": "Stone Lock",
+      "path": "res://assets/zax/polygons/data/Stone Lock.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Stone Lock.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -17.0,
+        "min_y": -2.0,
+        "max_x": 14.0,
+        "max_y": 21.0
+      },
+      "sha256": "b78b53138cf379cdda9cdd891e5c4bee975d4bf913678f472b6c05c2d936b3fb"
+    },
+    "Environments/Jungle/Teleporters/Teleporter 1": {
+      "basename": "Teleporter 1",
+      "path": "res://assets/zax/polygons/data/Teleporter 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Teleporter 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": -73.0,
+        "min_y": 7.0,
+        "max_x": -33.0,
+        "max_y": 37.0
+      },
+      "sha256": "c6e2a5d713cd652ef6740a94f111d12a513d17796b63cae3ca863c6606d96dcf"
+    },
+    "Environments/Jungle/Teleporters/Teleporter 2": {
+      "basename": "Teleporter 2",
+      "path": "res://assets/zax/polygons/data/Teleporter 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Teleporter 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": -67.0,
+        "min_y": 39.0,
+        "max_x": -29.0,
+        "max_y": 71.0
+      },
+      "sha256": "c48edeb66cd941303bb57d095a2acc8066354a0fe39f1b0f76363be2af60f0d2"
+    },
+    "Environments/Jungle/Teleporters/Teleporter Crystal 1": {
+      "basename": "Teleporter Crystal 1",
+      "path": "res://assets/zax/polygons/data/Teleporter Crystal 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Teleporter Crystal 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 15,
+      "bounds": {
+        "min_x": -56.0,
+        "min_y": -13.0,
+        "max_x": 52.0,
+        "max_y": 60.0
+      },
+      "sha256": "959acc2b8e38da31a73f553262fcd82b22e37b8330bdf4f0a09afe9caacba815"
+    },
+    "Environments/Jungle/Trees/Barrel Tree 1": {
+      "basename": "Barrel Tree 1",
+      "path": "res://assets/zax/polygons/data/Barrel Tree 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Barrel Tree 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 19.0,
+        "min_y": 39.0,
+        "max_x": 42.0,
+        "max_y": 56.0
+      },
+      "sha256": "d94ad05173b5bbe2d8e1719b1019e15f891301715de041781440dd7456053ef9"
+    },
+    "Environments/Jungle/Trees/Barrel Tree 2": {
+      "basename": "Barrel Tree 2",
+      "path": "res://assets/zax/polygons/data/Barrel Tree 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Barrel Tree 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 10,
+      "bounds": {
+        "min_x": 14.0,
+        "min_y": 30.0,
+        "max_x": 41.0,
+        "max_y": 51.0
+      },
+      "sha256": "08af3945ef3c468055b68624333a85c1a3a624e3b934044411af12189a335368"
+    },
+    "Environments/Jungle/Trees/Barrel Tree 3": {
+      "basename": "Barrel Tree 3",
+      "path": "res://assets/zax/polygons/data/Barrel Tree 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Barrel Tree 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 10,
+      "bounds": {
+        "min_x": 18.0,
+        "min_y": 34.0,
+        "max_x": 43.0,
+        "max_y": 58.0
+      },
+      "sha256": "f7608a2fbf780ba0d173b22a3c45e3f1373bc1f3ef7600e3a174233e5d25378b"
+    },
+    "Environments/Jungle/Trees/Burn Tree 03": {
+      "basename": "Burn Tree 03",
+      "path": "res://assets/zax/polygons/data/Burn Tree 03.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Tree 03.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": 3.0,
+        "min_y": 46.0,
+        "max_x": 34.0,
+        "max_y": 67.0
+      },
+      "sha256": "b6424eb99921fb1680f0a19fe845840c9096ad2e6923c94fc2789b8dc1c91362"
+    },
+    "Environments/Jungle/Trees/Burn Tree 04": {
+      "basename": "Burn Tree 04",
+      "path": "res://assets/zax/polygons/data/Burn Tree 04.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Tree 04.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": 11.0,
+        "min_y": 84.0,
+        "max_x": 57.0,
+        "max_y": 114.0
+      },
+      "sha256": "bf4490b2c5bc06777b89f842a216c6204eb45e11c06c6cb43ca1cb6726221073"
+    },
+    "Environments/Jungle/Trees/Burn Tree 05": {
+      "basename": "Burn Tree 05",
+      "path": "res://assets/zax/polygons/data/Burn Tree 05.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Tree 05.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": -44.0,
+        "min_y": -19.0,
+        "max_x": 49.0,
+        "max_y": 47.0
+      },
+      "sha256": "bb6b59b8489ef708905f11d412ca997fc7a8ad9841ed64b59bc8208eb7cd9695"
+    },
+    "Environments/Jungle/Trees/Burn Tree 06": {
+      "basename": "Burn Tree 06",
+      "path": "res://assets/zax/polygons/data/Burn Tree 06.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Tree 06.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": -32.0,
+        "min_y": -23.0,
+        "max_x": 53.0,
+        "max_y": 49.0
+      },
+      "sha256": "08188f35b197fb96c3b2c0ddf6fbf62ed83599fe64085350445d994d1dd511d1"
+    },
+    "Environments/Jungle/Trees/Burn Tree 07": {
+      "basename": "Burn Tree 07",
+      "path": "res://assets/zax/polygons/data/Burn Tree 07.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burn Tree 07.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 16,
+      "bounds": {
+        "min_x": -98.0,
+        "min_y": -24.0,
+        "max_x": 127.0,
+        "max_y": 105.0
+      },
+      "sha256": "fcdb1b81a9cde392b91baa310a94faa8a8eb935616063d45cdd17bdfe1bee760"
+    },
+    "Environments/Jungle/Trees/Burnt Stump 01": {
+      "basename": "Burnt Stump 01",
+      "path": "res://assets/zax/polygons/data/Burnt Stump 01.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burnt Stump 01.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 10,
+      "bounds": {
+        "min_x": 4.0,
+        "min_y": 22.0,
+        "max_x": 51.0,
+        "max_y": 57.0
+      },
+      "sha256": "5b272aa712f0bc9de5b7a3b2b5d23078f5999aefc217ddd05e9c689dc27f5e22"
+    },
+    "Environments/Jungle/Trees/Burnt Stump 02": {
+      "basename": "Burnt Stump 02",
+      "path": "res://assets/zax/polygons/data/Burnt Stump 02.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burnt Stump 02.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 16.0,
+        "min_y": 28.0,
+        "max_x": 61.0,
+        "max_y": 78.0
+      },
+      "sha256": "ec90513674394a19788366c5ce1c80da00deed057e7cb6d312083c1ba9859808"
+    },
+    "Environments/Jungle/Trees/Burnt Stump 03": {
+      "basename": "Burnt Stump 03",
+      "path": "res://assets/zax/polygons/data/Burnt Stump 03.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Burnt Stump 03.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 10.0,
+        "min_y": 29.0,
+        "max_x": 34.0,
+        "max_y": 51.0
+      },
+      "sha256": "3168301dbbe73465b0ad1a72e3ef1540d9c65956ba2591e3aec2a97b52dabac5"
+    },
+    "Environments/Jungle/Trees/Fallen Tree 01": {
+      "basename": "Fallen Tree 01",
+      "path": "res://assets/zax/polygons/data/Fallen Tree 01.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fallen Tree 01.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 19,
+      "bounds": {
+        "min_x": -100.0,
+        "min_y": -73.0,
+        "max_x": 137.0,
+        "max_y": 65.0
+      },
+      "sha256": "f13be3280ea577e8ba5388066829bcd82b37a6034f151648c643a5c89e6126fd"
+    },
+    "Environments/Jungle/Trees/Fallen Tree 02": {
+      "basename": "Fallen Tree 02",
+      "path": "res://assets/zax/polygons/data/Fallen Tree 02.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fallen Tree 02.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 15,
+      "bounds": {
+        "min_x": -139.0,
+        "min_y": -81.0,
+        "max_x": 104.0,
+        "max_y": 67.0
+      },
+      "sha256": "c12891c688afab15b6f42ecf928884fbee400431daa7189e89cd5fd66ccd031b"
+    },
+    "Environments/Jungle/Trees/Health Fruit Tree": {
+      "basename": "Health Fruit Tree",
+      "path": "res://assets/zax/polygons/data/Health Fruit Tree.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit Tree.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 28.0,
+        "min_y": 55.0,
+        "max_x": 51.0,
+        "max_y": 74.0
+      },
+      "sha256": "bac48bdf27027abdf32adeff21a4926fffd690d6d6bfbae8dc49f6d192c7b78a"
+    },
+    "Environments/Jungle/Trees/Jungle 1": {
+      "basename": "Jungle 1",
+      "path": "res://assets/zax/polygons/data/Jungle 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 11,
+      "bounds": {
+        "min_x": -38.0,
+        "min_y": 34.0,
+        "max_x": 76.0,
+        "max_y": 102.0
+      },
+      "sha256": "31adc8d2b326fdc1e0c3ef2846b843cef0f1f0534d1957c57d769a40c3cdfdee"
+    },
+    "Environments/Jungle/Trees/Jungle 2": {
+      "basename": "Jungle 2",
+      "path": "res://assets/zax/polygons/data/Jungle 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -38.0,
+        "min_y": 9.0,
+        "max_x": 77.0,
+        "max_y": 84.0
+      },
+      "sha256": "d48cac0bdc4ed53f17423919af2499652c927c35dcf1239b56038e11d665a397"
+    },
+    "Environments/Jungle/Trees/Jungle 2b1": {
+      "basename": "Jungle 2b1",
+      "path": "res://assets/zax/polygons/data/Jungle 2b1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 2b1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -38.0,
+        "min_y": 9.0,
+        "max_x": 77.0,
+        "max_y": 84.0
+      },
+      "sha256": "e17960f266f4c7e50c18b3e47b299a4c6660d448ab148e9ecdee7dba3320b753"
+    },
+    "Environments/Jungle/Trees/Jungle 2b2": {
+      "basename": "Jungle 2b2",
+      "path": "res://assets/zax/polygons/data/Jungle 2b2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 2b2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -10.0,
+        "min_y": 31.0,
+        "max_x": 101.0,
+        "max_y": 106.0
+      },
+      "sha256": "847987de3cb282e9324fba08d114189109990c4f0785e39b12cfbd8bdfbef6b9"
+    },
+    "Environments/Jungle/Trees/Jungle 2b3": {
+      "basename": "Jungle 2b3",
+      "path": "res://assets/zax/polygons/data/Jungle 2b3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 2b3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -29.0,
+        "min_y": 28.0,
+        "max_x": 86.0,
+        "max_y": 103.0
+      },
+      "sha256": "9218f68d9f8a6cc05276a69da9775481294ba901539acf1f00814b24e5f383a7"
+    },
+    "Environments/Jungle/Trees/Jungle 3": {
+      "basename": "Jungle 3",
+      "path": "res://assets/zax/polygons/data/Jungle 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -22.0,
+        "min_y": 14.0,
+        "max_x": 94.0,
+        "max_y": 93.0
+      },
+      "sha256": "4d475cf3f40c2aa460b0ac9f5919fd52f71323b776b28ff6124b4dbfce12950b"
+    },
+    "Environments/Jungle/Trees/Jungle 4": {
+      "basename": "Jungle 4",
+      "path": "res://assets/zax/polygons/data/Jungle 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 10,
+      "bounds": {
+        "min_x": -32.0,
+        "min_y": 18.0,
+        "max_x": 101.0,
+        "max_y": 87.0
+      },
+      "sha256": "b4bbfbb853256ac9b94df8dbab248a16539287da8be3221eb0e13b7285a5c931"
+    },
+    "Environments/Jungle/Trees/Jungle 4b1": {
+      "basename": "Jungle 4b1",
+      "path": "res://assets/zax/polygons/data/Jungle 4b1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 4b1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -28.0,
+        "min_y": 13.0,
+        "max_x": 106.0,
+        "max_y": 86.0
+      },
+      "sha256": "6bf40c62a0a1c37e68f61ec8b4c094daca33dc0878a5c00ec0a588bed1641620"
+    },
+    "Environments/Jungle/Trees/Jungle 5": {
+      "basename": "Jungle 5",
+      "path": "res://assets/zax/polygons/data/Jungle 5.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 5.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 11,
+      "bounds": {
+        "min_x": -22.0,
+        "min_y": 27.0,
+        "max_x": 92.0,
+        "max_y": 100.0
+      },
+      "sha256": "d7d4afc5520f175640b228f4b7609a94a389ec94715a597bdf75b7221d3dacda"
+    },
+    "Environments/Jungle/Trees/Jungle 6": {
+      "basename": "Jungle 6",
+      "path": "res://assets/zax/polygons/data/Jungle 6.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Jungle 6.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": -83.0,
+        "min_y": 15.0,
+        "max_x": 89.0,
+        "max_y": 107.0
+      },
+      "sha256": "e648800ada446e218cc0576161fd4bf8b437f9846f7f13caf4497a389f1d7c2d"
+    },
+    "Environments/Jungle/Trees/Leaf Tree 1": {
+      "basename": "Leaf Tree 1",
+      "path": "res://assets/zax/polygons/data/Leaf Tree 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Leaf Tree 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 24.0,
+        "min_y": 60.0,
+        "max_x": 47.0,
+        "max_y": 82.0
+      },
+      "sha256": "d020b4ba5d55b41000bdd51ee5a18669fb92c6213865f3cc63a21103b1316d1e"
+    },
+    "Environments/Jungle/Trees/Leaf Tree 2": {
+      "basename": "Leaf Tree 2",
+      "path": "res://assets/zax/polygons/data/Leaf Tree 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Leaf Tree 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 28.0,
+        "min_y": 63.0,
+        "max_x": 48.0,
+        "max_y": 81.0
+      },
+      "sha256": "77dc0e05e69dfdc18dd93b341f7597114601cd475cff45041edc44958420f42d"
+    },
+    "Environments/Jungle/Trees/Leaf Tree 3": {
+      "basename": "Leaf Tree 3",
+      "path": "res://assets/zax/polygons/data/Leaf Tree 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Leaf Tree 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 28.0,
+        "min_y": 53.0,
+        "max_x": 48.0,
+        "max_y": 70.0
+      },
+      "sha256": "0d231374c407ab4192ab9dfd264bddccc891cb126f601e925333d9c64580df96"
+    },
+    "Environments/Jungle/Trees/Leaf Tree 3b1": {
+      "basename": "Leaf Tree 3b1",
+      "path": "res://assets/zax/polygons/data/Leaf Tree 3b1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Leaf Tree 3b1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 30.0,
+        "min_y": 56.0,
+        "max_x": 50.0,
+        "max_y": 73.0
+      },
+      "sha256": "5d03e11ce555532e6bee238c37d04ac2850ebdc038a7e8b1612bf60d81932fd8"
+    },
+    "Environments/Jungle/Trees/Leaf Tree 4": {
+      "basename": "Leaf Tree 4",
+      "path": "res://assets/zax/polygons/data/Leaf Tree 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Leaf Tree 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": 25.0,
+        "min_y": 70.0,
+        "max_x": 40.0,
+        "max_y": 82.0
+      },
+      "sha256": "06c6fea6612e42ea3a381356e4e8ed9c13332374719bbe97d0daead602c63751"
+    },
+    "Environments/Jungle/Trees/Palm Tree 1": {
+      "basename": "Palm Tree 1",
+      "path": "res://assets/zax/polygons/data/Palm Tree 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 8,
+      "bounds": {
+        "min_x": 37.0,
+        "min_y": 73.0,
+        "max_x": 53.0,
+        "max_y": 86.0
+      },
+      "sha256": "96de6b5edcd6892cce979c26132663feee440af0ad262717be5d0b3b36a94b32"
+    },
+    "Environments/Jungle/Trees/Palm Tree 2": {
+      "basename": "Palm Tree 2",
+      "path": "res://assets/zax/polygons/data/Palm Tree 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": 29.0,
+        "min_y": 62.0,
+        "max_x": 47.0,
+        "max_y": 75.0
+      },
+      "sha256": "d2d3d515fad3ffe8c9c9cca060e61d4c7bdd56cab4e88d939412894fa0cf16aa"
+    },
+    "Environments/Jungle/Trees/Palm Tree 3": {
+      "basename": "Palm Tree 3",
+      "path": "res://assets/zax/polygons/data/Palm Tree 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": 30.0,
+        "min_y": 60.0,
+        "max_x": 42.0,
+        "max_y": 72.0
+      },
+      "sha256": "649157c7b823015c9f91fff22c758aaf87d5a280eca17a643dd10e2d1dddd449"
+    },
+    "Environments/Jungle/Trees/Palm Tree 4": {
+      "basename": "Palm Tree 4",
+      "path": "res://assets/zax/polygons/data/Palm Tree 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 22.0,
+        "min_y": 52.0,
+        "max_x": 44.0,
+        "max_y": 72.0
+      },
+      "sha256": "73a4a1cdbbbd15b435f8f86b197054c3a6ef6e011a68286471d9cad4140268e6"
+    },
+    "Environments/Jungle/Trees/Palm Tree 5": {
+      "basename": "Palm Tree 5",
+      "path": "res://assets/zax/polygons/data/Palm Tree 5.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree 5.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 7,
+      "bounds": {
+        "min_x": 33.0,
+        "min_y": 40.91270065307617,
+        "max_x": 43.0,
+        "max_y": 47.08729934692383
+      },
+      "sha256": "32c71658bed3c98881177bf7017981fe726cbc6c1d89f0f5331fb546d1b48835"
+    },
+    "Environments/Jungle/Trees/Palm Tree Thin 1": {
+      "basename": "Palm Tree Thin 1",
+      "path": "res://assets/zax/polygons/data/Palm Tree Thin 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree Thin 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 20.0,
+        "min_y": 49.0,
+        "max_x": 66.0,
+        "max_y": 73.0
+      },
+      "sha256": "fefb218072657bc3b6020829ae3faac20c6956d734c1a320d2702b78b9572481"
+    },
+    "Environments/Jungle/Trees/Palm Tree Thin 2": {
+      "basename": "Palm Tree Thin 2",
+      "path": "res://assets/zax/polygons/data/Palm Tree Thin 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree Thin 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 19.0,
+        "min_y": 38.0,
+        "max_x": 63.0,
+        "max_y": 66.0
+      },
+      "sha256": "6f4cf0adb38de12053b49ee0d4e378e9324c2fea4828b8e8918e3dca212ccf23"
+    },
+    "Environments/Jungle/Trees/Palm Tree Thin 3": {
+      "basename": "Palm Tree Thin 3",
+      "path": "res://assets/zax/polygons/data/Palm Tree Thin 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Palm Tree Thin 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 14.0,
+        "min_y": 42.0,
+        "max_x": 64.0,
+        "max_y": 67.0
+      },
+      "sha256": "a9bf39588d78bab8a052ff4261150fd7549b765dd52b5049e6bac82e78562b53"
+    },
+    "Environments/Jungle/Trees/jungle 3b1": {
+      "basename": "jungle 3b1",
+      "path": "res://assets/zax/polygons/data/jungle 3b1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/jungle 3b1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -26.0,
+        "min_y": 7.0,
+        "max_x": 92.0,
+        "max_y": 82.0
+      },
+      "sha256": "bc7ec066d770de8145675a3f195a134a5ac553dfe1344a75f3f825dde1ada26f"
+    },
+    "Environments/Jungle/Walls/Ground Bricks 1": {
+      "basename": "Ground Bricks 1",
+      "path": "res://assets/zax/polygons/data/Ground Bricks 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Ground Bricks 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "d4d48e1c382ec4048199d9b97a37103675411890fbb81a2eab2dafef4d619540"
+    },
+    "Environments/Jungle/Walls/Wall Stone Brick 1": {
+      "basename": "Wall Stone Brick 1",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brick 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brick 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": -54.0,
+        "min_y": -2.0,
+        "max_x": 92.0,
+        "max_y": 83.0
+      },
+      "sha256": "adc216c9b5ae8ae39044d1f7bfcd15b62a3901c703e1c0436b67c85e0bdff324"
+    },
+    "Environments/Jungle/Walls/Wall Stone Brick Piller 1": {
+      "basename": "Wall Stone Brick Piller 1",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brick Piller 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brick Piller 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -6.0,
+        "min_y": 17.0,
+        "max_x": 54.0,
+        "max_y": 62.0
+      },
+      "sha256": "c3a6ac2092a29451d53aaf9b9fb13149d9c67b60ea8817126654421dcdcc2790"
+    },
+    "Environments/Jungle/Walls/Wall Stone Brick Piller 2": {
+      "basename": "Wall Stone Brick Piller 2",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brick Piller 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brick Piller 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -1.0,
+        "min_y": 35.0,
+        "max_x": 56.0,
+        "max_y": 79.0
+      },
+      "sha256": "dbe368f9577aa193462e04915727c4930b5ef40e8719a8197f2e290292b18f1e"
+    },
+    "Environments/Jungle/Walls/Wall Stone Brown End 1": {
+      "basename": "Wall Stone Brown End 1",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brown End 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brown End 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -38.0,
+        "min_y": -5.0,
+        "max_x": 41.0,
+        "max_y": 49.0
+      },
+      "sha256": "523fe7dde3ea356e387ffb381e2bf0be9dd3b9396d59eed30cecf16000a66a86"
+    },
+    "Environments/Jungle/Walls/Wall Stone Brown End 2": {
+      "basename": "Wall Stone Brown End 2",
+      "path": "res://assets/zax/polygons/data/Wall Stone Brown End 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Wall Stone Brown End 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -28.0,
+        "min_y": 0.0,
+        "max_x": 45.0,
+        "max_y": 55.0
+      },
+      "sha256": "5e065bf43b12b0c2713402ed9c47566045be2702371c3d288c5221aabaa40d32"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 01": {
+      "basename": "Water Bank 01",
+      "path": "res://assets/zax/polygons/data/Water Bank 01.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 01.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 18,
+      "bounds": {
+        "min_x": -53.0,
+        "min_y": -53.0,
+        "max_x": 53.0,
+        "max_y": 37.0
+      },
+      "sha256": "14b3c7b9cbb8ff0b0a01370bde60439801e6db129a85787e08cdc77c3da3ef8a"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 02": {
+      "basename": "Water Bank 02",
+      "path": "res://assets/zax/polygons/data/Water Bank 02.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 02.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 20,
+      "bounds": {
+        "min_x": -52.0,
+        "min_y": -33.0,
+        "max_x": 74.0,
+        "max_y": 8.0
+      },
+      "sha256": "4ad97dd2788907f2649842cd9ff710e92e2266d7e09f2f272a8c1931d29839c1"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 03": {
+      "basename": "Water Bank 03",
+      "path": "res://assets/zax/polygons/data/Water Bank 03.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 03.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 16,
+      "bounds": {
+        "min_x": -54.0,
+        "min_y": -61.0,
+        "max_x": 58.0,
+        "max_y": 34.0
+      },
+      "sha256": "f235d5ad2a807b05eecbcaa8d60bb760997668f9a032f410118f8818b2b69739"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 04": {
+      "basename": "Water Bank 04",
+      "path": "res://assets/zax/polygons/data/Water Bank 04.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 04.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 15,
+      "bounds": {
+        "min_x": -75.0,
+        "min_y": -68.0,
+        "max_x": 22.0,
+        "max_y": 41.0
+      },
+      "sha256": "bf8d75660daa7e7426ea569d54ba6d8dbfc318142ef4d467e051fb2c5735d392"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 05": {
+      "basename": "Water Bank 05",
+      "path": "res://assets/zax/polygons/data/Water Bank 05.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 05.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 11,
+      "bounds": {
+        "min_x": -8.0,
+        "min_y": -57.0,
+        "max_x": 65.0,
+        "max_y": 34.0
+      },
+      "sha256": "9c49c852169cecdecdde2846c10be34ec0aa5141957e95eacce967cf7b53f213"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 06": {
+      "basename": "Water Bank 06",
+      "path": "res://assets/zax/polygons/data/Water Bank 06.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 06.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -23.0,
+        "min_y": -55.0,
+        "max_x": 71.0,
+        "max_y": 17.0
+      },
+      "sha256": "5dd724f964ccd8fa67badf6fd8f1ef1b60ccef173cf2517704f270c17d27ad7f"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 07": {
+      "basename": "Water Bank 07",
+      "path": "res://assets/zax/polygons/data/Water Bank 07.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 07.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 12,
+      "bounds": {
+        "min_x": -70.0,
+        "min_y": -27.0,
+        "max_x": 65.0,
+        "max_y": 6.0
+      },
+      "sha256": "830d60cfe7b1096f9dac787f9201081a1628b7eabed04d1f40235447c92be969"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 08": {
+      "basename": "Water Bank 08",
+      "path": "res://assets/zax/polygons/data/Water Bank 08.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 08.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 13,
+      "bounds": {
+        "min_x": -65.0,
+        "min_y": -49.0,
+        "max_x": 79.0,
+        "max_y": 7.0
+      },
+      "sha256": "5b158dfdda922c2f8e14070e8572f9d13fa50c66cc30257e9dd66dfcf9c5969a"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 09": {
+      "basename": "Water Bank 09",
+      "path": "res://assets/zax/polygons/data/Water Bank 09.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 09.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 16,
+      "bounds": {
+        "min_x": -80.0,
+        "min_y": -37.0,
+        "max_x": 61.0,
+        "max_y": 42.0
+      },
+      "sha256": "52d48570175eb620d34c31246a352c4462c2273a50fa5c8eac8a2e7aa6393d18"
+    },
+    "Environments/Jungle/Water Banks/Water Bank 10": {
+      "basename": "Water Bank 10",
+      "path": "res://assets/zax/polygons/data/Water Bank 10.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Water Bank 10.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 17,
+      "bounds": {
+        "min_x": -29.0,
+        "min_y": -66.0,
+        "max_x": 39.0,
+        "max_y": 47.0
+      },
+      "sha256": "8c654726a4dcf6564e6e06ddb4c57bdc5e44823155e100f5a0faed19acbc2eb3"
+    },
+    "Environments/Om Ship/Om Switch 2": {
+      "basename": "Om Switch 2",
+      "path": "res://assets/zax/polygons/data/Om Switch 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Om Switch 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 11,
+      "bounds": {
+        "min_x": -36.0,
+        "min_y": -2.0,
+        "max_x": 44.0,
+        "max_y": 44.0
+      },
+      "sha256": "256826805f3cde446ee7926da245616d1b2380dda75daa719995d6d1ab5ca6bc"
+    },
+    "Environments/Under Temple/Doors/Under Temple Entrance 1 Door": {
+      "basename": "Under Temple Entrance 1 Door",
+      "path": "res://assets/zax/polygons/data/Under Temple Entrance 1 Door.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Under Temple Entrance 1 Door.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -51.0,
+        "min_y": 51.0,
+        "max_x": 23.0,
+        "max_y": 89.0
+      },
+      "sha256": "b5674cc18b30cf375a0ff9cc0f7085affc665922328db0d419c0d898c19a7502"
+    },
+    "Environments/Volcanic Pits/Details/Fire Grate": {
+      "basename": "Fire Grate",
+      "path": "res://assets/zax/polygons/data/Fire Grate.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Fire Grate.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 9,
+      "bounds": {
+        "min_x": 41.0,
+        "min_y": 47.0,
+        "max_x": 71.0,
+        "max_y": 69.0
+      },
+      "sha256": "8582013b6dd83ad95996e93f212a557613479e1f9e7ddaba47455a819d1620e1"
+    },
+    "Environments/Zellon Outside/GroundSlashTest": {
+      "basename": "GroundSlashTest",
+      "path": "res://assets/zax/polygons/data/GroundSlashTest.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/GroundSlashTest.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 22,
+      "bounds": {
+        "min_x": -325.0,
+        "min_y": -276.0,
+        "max_x": 380.0,
+        "max_y": 137.0
+      },
+      "sha256": "71e0c15b0053cefa7ffbf8d8810160a10ebd084e2dc9838dd015a0ebb234b4a9"
+    },
+    "Environments/Zellon Outside/GroundSlashTest2": {
+      "basename": "GroundSlashTest2",
+      "path": "res://assets/zax/polygons/data/GroundSlashTest2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/GroundSlashTest2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "b58f7bbd593f47f3c9905a057cced49ccc0307125ba268d8f62eff34a90d0da1"
+    },
+    "Environments/Zellon Outside/GroundSlashTest3": {
+      "basename": "GroundSlashTest3",
+      "path": "res://assets/zax/polygons/data/GroundSlashTest3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/GroundSlashTest3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "fc4c1be0bc0bf9d8b09a06ee7e83e6baa11ed4cb36455a3ee5c0f5457483c6dc"
+    },
+    "Environments/Zellon Outside/NewZaxShipDoor": {
+      "basename": "NewZaxShipDoor",
+      "path": "res://assets/zax/polygons/data/NewZaxShipDoor.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/NewZaxShipDoor.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": 183.0,
+        "min_y": -127.0,
+        "max_x": 257.0,
+        "max_y": -66.0
+      },
+      "sha256": "55ce3fcc331b8cffb81954d9b7405cf9ea38ef963ff36350b0e0221570de114e"
+    },
+    "Items/Medical/Health Fruit 1": {
+      "basename": "Health Fruit 1",
+      "path": "res://assets/zax/polygons/data/Health Fruit 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": -6.0,
+        "min_y": 1.0,
+        "max_x": 3.0,
+        "max_y": 8.0
+      },
+      "sha256": "a584b6df1483fc3e033bfb9cb7838bb40c6e507e345a969b3fd3d0d994f189a7"
+    },
+    "Items/Medical/Health Fruit 2": {
+      "basename": "Health Fruit 2",
+      "path": "res://assets/zax/polygons/data/Health Fruit 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": -3.0,
+        "min_y": 1.0,
+        "max_x": 7.0,
+        "max_y": 9.0
+      },
+      "sha256": "19282cb65bcf4e41d29bf437a47ea000ad8ac7fcb6c5e6978ab72f7972b54468"
+    },
+    "Items/Medical/Health Fruit 3": {
+      "basename": "Health Fruit 3",
+      "path": "res://assets/zax/polygons/data/Health Fruit 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": -4.0,
+        "min_y": -2.0,
+        "max_x": 7.0,
+        "max_y": 8.0
+      },
+      "sha256": "6085f11ee5745ce08317c58261aa77d83fed8d5321baef6a680ea9749222a422"
+    },
+    "Items/Medical/Health Fruit 4": {
+      "basename": "Health Fruit 4",
+      "path": "res://assets/zax/polygons/data/Health Fruit 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": 0.0,
+        "min_y": 3.0,
+        "max_x": 7.0,
+        "max_y": 9.0
+      },
+      "sha256": "c9ec9f52a200e5ccd6954b021c3f2b6485c58b12fd28085c493a5cc4dab41cb1"
+    },
+    "Items/Medical/Health Fruit 5": {
+      "basename": "Health Fruit 5",
+      "path": "res://assets/zax/polygons/data/Health Fruit 5.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Health Fruit 5.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 4,
+      "bounds": {
+        "min_x": -5.0,
+        "min_y": 1.0,
+        "max_x": 5.0,
+        "max_y": 8.0
+      },
+      "sha256": "ef8c1a977f6f50242c146b46782c46e8525de2df0dc57fe9087eb6b3d2851e54"
+    },
+    "Items/Money/Crystal 01": {
+      "basename": "Crystal 01",
+      "path": "res://assets/zax/polygons/data/Crystal 01.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Crystal 01.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -5.0,
+        "min_y": -3.0,
+        "max_x": 5.0,
+        "max_y": 9.0
+      },
+      "sha256": "31d79af3d01f4acaff532f064fd060e48e49749a036dcd4244771656ee03723d"
+    },
+    "Items/Money/Crystal 02": {
+      "basename": "Crystal 02",
+      "path": "res://assets/zax/polygons/data/Crystal 02.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Crystal 02.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -2.0,
+        "min_y": -1.0,
+        "max_x": 8.0,
+        "max_y": 8.0
+      },
+      "sha256": "41cc130d69ac57247eb969d5374860b9812dd347a691198be812c877c10c894b"
+    },
+    "Items/Money/Crystal 03": {
+      "basename": "Crystal 03",
+      "path": "res://assets/zax/polygons/data/Crystal 03.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Crystal 03.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -2.0,
+        "min_y": -2.0,
+        "max_x": 8.0,
+        "max_y": 9.0
+      },
+      "sha256": "7196204732e44c0b7f763a8abd910fbe6346424f37a1566305de819c39d15819"
+    },
+    "Items/Money/Crystal 04": {
+      "basename": "Crystal 04",
+      "path": "res://assets/zax/polygons/data/Crystal 04.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Crystal 04.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 5,
+      "bounds": {
+        "min_x": -1.0,
+        "min_y": -4.0,
+        "max_x": 6.0,
+        "max_y": 7.0
+      },
+      "sha256": "8248e00347f98edd60d6c06cbb91d204f99c31df598ea6155753df32523e4ae3"
+    },
+    "Items/Money/Ore deposit 1": {
+      "basename": "Ore deposit 1",
+      "path": "res://assets/zax/polygons/data/Ore deposit 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Ore deposit 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": -6.0,
+        "min_y": -3.0,
+        "max_x": 5.0,
+        "max_y": 5.0
+      },
+      "sha256": "7ac415f90791e48133a63954f63516ad9108169cd68a329d19d4e109c5f0d084"
+    },
+    "Items/Money/Ore deposit 2": {
+      "basename": "Ore deposit 2",
+      "path": "res://assets/zax/polygons/data/Ore deposit 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Ore deposit 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": -10.0,
+        "min_y": -3.0,
+        "max_x": 3.0,
+        "max_y": 6.0
+      },
+      "sha256": "edb58bf450c512dfbff0d8f23ded4c5a43fbf630c1c472490f7c531a0b42997d"
+    },
+    "Items/Money/Ore deposit 3": {
+      "basename": "Ore deposit 3",
+      "path": "res://assets/zax/polygons/data/Ore deposit 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Ore deposit 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": -10.0,
+        "min_y": -3.0,
+        "max_x": 2.0,
+        "max_y": 6.0
+      },
+      "sha256": "55c623250c57fe67b95abfe6099b1d9b37dc916c9a59f8605bbd05a51aeb1961"
+    },
+    "Items/Money/Ore deposit 4": {
+      "basename": "Ore deposit 4",
+      "path": "res://assets/zax/polygons/data/Ore deposit 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/Ore deposit 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 6,
+      "bounds": {
+        "min_x": -7.0,
+        "min_y": -3.0,
+        "max_x": 5.0,
+        "max_y": 8.0
+      },
+      "sha256": "25fed50ed0b3e0234cd55a9ce8f0f1713e2aa422865493c35b0fde7bd607cf26"
+    },
+    "Special Effects/fire 3": {
+      "basename": "fire 3",
+      "path": "res://assets/zax/polygons/data/fire 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/fire 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "ff89ec1de2558a800717dd04ea220a7e347e8a96cca85816bae2a5500b16d80c"
+    },
+    "Special Effects/smoke 1": {
+      "basename": "smoke 1",
+      "path": "res://assets/zax/polygons/data/smoke 1.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/smoke 1.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "899b8e5781b5654957ee3e31a929e728b702906d4e72649aab63d90d03bfe9e3"
+    },
+    "Special Effects/smoke 2": {
+      "basename": "smoke 2",
+      "path": "res://assets/zax/polygons/data/smoke 2.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/smoke 2.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "0cf9ad8b4a0d92e347c2cbde698126a57cf7748ebddbafe88073d9e425b4adf7"
+    },
+    "Special Effects/smoke 3": {
+      "basename": "smoke 3",
+      "path": "res://assets/zax/polygons/data/smoke 3.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/smoke 3.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "1c622a558221d72a7a0eaa97e2b2beb72f1ab25cae61a94dc5390190fe267eda"
+    },
+    "Special Effects/smoke 4": {
+      "basename": "smoke 4",
+      "path": "res://assets/zax/polygons/data/smoke 4.mdl16.json",
+      "source": "extract-zax-assets/extracted/polygons/data/smoke 4.mdl16.json",
+      "format": "POLY2D",
+      "vertex_count": 0,
+      "bounds": null,
+      "sha256": "6cbfb6bb00acfaf71e7e9cfe838622c26bf2b6d1e487850a0c48e613a3887dd8"
+    }
+  }
+}

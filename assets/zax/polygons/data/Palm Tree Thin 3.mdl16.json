@@ -1,0 +1,55 @@
+{
+  "source": "zax-assets/data/Palm Tree Thin 3.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 218,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 9,
+  "vertices": [
+    {
+      "x": 48.0,
+      "y": 67.0
+    },
+    {
+      "x": 28.0,
+      "y": 66.0
+    },
+    {
+      "x": 14.0,
+      "y": 61.0
+    },
+    {
+      "x": 14.0,
+      "y": 47.0
+    },
+    {
+      "x": 27.0,
+      "y": 43.0
+    },
+    {
+      "x": 44.0,
+      "y": 42.0
+    },
+    {
+      "x": 64.0,
+      "y": 48.0
+    },
+    {
+      "x": 63.0,
+      "y": 62.0
+    },
+    {
+      "x": 48.0,
+      "y": 67.0
+    }
+  ],
+  "bounds": {
+    "min_x": 14.0,
+    "min_y": 42.0,
+    "max_x": 64.0,
+    "max_y": 67.0
+  },
+  "prefix_size": 218,
+  "trailing_size": 46942
+}

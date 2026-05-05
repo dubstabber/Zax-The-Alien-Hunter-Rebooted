@@ -1,0 +1,51 @@
+{
+  "source": "zax-assets/data/Health Fruit Tree.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 219,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 8,
+  "vertices": [
+    {
+      "x": 34.0,
+      "y": 74.0
+    },
+    {
+      "x": 28.0,
+      "y": 68.0
+    },
+    {
+      "x": 29.0,
+      "y": 59.0
+    },
+    {
+      "x": 41.0,
+      "y": 55.0
+    },
+    {
+      "x": 51.0,
+      "y": 60.0
+    },
+    {
+      "x": 51.0,
+      "y": 69.0
+    },
+    {
+      "x": 45.0,
+      "y": 74.0
+    },
+    {
+      "x": 34.0,
+      "y": 74.0
+    }
+  ],
+  "bounds": {
+    "min_x": 28.0,
+    "min_y": 55.0,
+    "max_x": 51.0,
+    "max_y": 74.0
+  },
+  "prefix_size": 219,
+  "trailing_size": 49592
+}

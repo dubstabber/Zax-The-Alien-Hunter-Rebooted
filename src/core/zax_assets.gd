@@ -46,6 +46,10 @@ func load_json(asset_id: StringName) -> Dictionary:
 	return _load_json_file(path)
 
 
+func load_json_path(path: String) -> Dictionary:
+	return _load_json_file(path)
+
+
 func _load_json_file(path: String) -> Dictionary:
 	if not FileAccess.file_exists(path):
 		push_error("Missing Zax JSON asset: %s" % path)

@@ -1,0 +1,13 @@
+{
+  "source": "zax-assets/data/Jungle Bird.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 1467,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 0,
+  "vertices": [],
+  "bounds": null,
+  "prefix_size": 1467,
+  "trailing_size": 110855
+}

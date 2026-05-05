@@ -1,0 +1,51 @@
+{
+  "source": "zax-assets/data/Burnt Stump 03.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 421,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 8,
+  "vertices": [
+    {
+      "x": 20.0,
+      "y": 51.0
+    },
+    {
+      "x": 12.0,
+      "y": 46.0
+    },
+    {
+      "x": 10.0,
+      "y": 37.0
+    },
+    {
+      "x": 16.0,
+      "y": 29.0
+    },
+    {
+      "x": 29.0,
+      "y": 30.0
+    },
+    {
+      "x": 33.0,
+      "y": 39.0
+    },
+    {
+      "x": 34.0,
+      "y": 49.0
+    },
+    {
+      "x": 20.0,
+      "y": 51.0
+    }
+  ],
+  "bounds": {
+    "min_x": 10.0,
+    "min_y": 29.0,
+    "max_x": 34.0,
+    "max_y": 51.0
+  },
+  "prefix_size": 421,
+  "trailing_size": 6323
+}

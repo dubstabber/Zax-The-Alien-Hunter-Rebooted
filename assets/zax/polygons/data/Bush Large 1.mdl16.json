@@ -1,0 +1,55 @@
+{
+  "source": "zax-assets/data/Bush Large 1.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 449,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 9,
+  "vertices": [
+    {
+      "x": 55.0,
+      "y": 25.0
+    },
+    {
+      "x": 44.0,
+      "y": 34.0
+    },
+    {
+      "x": 23.0,
+      "y": 36.0
+    },
+    {
+      "x": 9.0,
+      "y": 28.0
+    },
+    {
+      "x": 3.0,
+      "y": 9.0
+    },
+    {
+      "x": 17.0,
+      "y": -4.0
+    },
+    {
+      "x": 38.0,
+      "y": -5.0
+    },
+    {
+      "x": 55.0,
+      "y": 6.0
+    },
+    {
+      "x": 55.0,
+      "y": 25.0
+    }
+  ],
+  "bounds": {
+    "min_x": 3.0,
+    "min_y": -5.0,
+    "max_x": 55.0,
+    "max_y": 36.0
+  },
+  "prefix_size": 449,
+  "trailing_size": 25859
+}

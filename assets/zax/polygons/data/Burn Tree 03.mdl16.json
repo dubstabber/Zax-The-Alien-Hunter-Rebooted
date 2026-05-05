@@ -1,0 +1,47 @@
+{
+  "source": "zax-assets/data/Burn Tree 03.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 184,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 7,
+  "vertices": [
+    {
+      "x": 34.0,
+      "y": 58.0
+    },
+    {
+      "x": 20.0,
+      "y": 67.0
+    },
+    {
+      "x": 7.0,
+      "y": 65.0
+    },
+    {
+      "x": 3.0,
+      "y": 56.0
+    },
+    {
+      "x": 14.0,
+      "y": 46.0
+    },
+    {
+      "x": 28.0,
+      "y": 46.0
+    },
+    {
+      "x": 34.0,
+      "y": 58.0
+    }
+  ],
+  "bounds": {
+    "min_x": 3.0,
+    "min_y": 46.0,
+    "max_x": 34.0,
+    "max_y": 67.0
+  },
+  "prefix_size": 184,
+  "trailing_size": 26193
+}

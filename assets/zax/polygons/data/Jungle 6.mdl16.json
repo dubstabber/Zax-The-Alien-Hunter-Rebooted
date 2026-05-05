@@ -1,0 +1,55 @@
+{
+  "source": "zax-assets/data/Jungle 6.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 180,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 9,
+  "vertices": [
+    {
+      "x": 89.0,
+      "y": 84.0
+    },
+    {
+      "x": 38.0,
+      "y": 107.0
+    },
+    {
+      "x": -43.0,
+      "y": 99.0
+    },
+    {
+      "x": -83.0,
+      "y": 69.0
+    },
+    {
+      "x": -78.0,
+      "y": 30.0
+    },
+    {
+      "x": -23.0,
+      "y": 15.0
+    },
+    {
+      "x": 36.0,
+      "y": 15.0
+    },
+    {
+      "x": 79.0,
+      "y": 29.0
+    },
+    {
+      "x": 89.0,
+      "y": 84.0
+    }
+  ],
+  "bounds": {
+    "min_x": -83.0,
+    "min_y": 15.0,
+    "max_x": 89.0,
+    "max_y": 107.0
+  },
+  "prefix_size": 180,
+  "trailing_size": 118657
+}

@@ -36,6 +36,13 @@
       "width": 176,
       "height": 121,
       "sha256": "301b73017248d8283d1f6eb3b2782631e157c756b87464beb6ae17dc41a25fd8"
+    },
+    "polygons_01_main": {
+      "type": "polygon_index",
+      "path": "res://assets/zax/polygons/model_polygon_index.json",
+      "source": "extract-zax-assets/extracted/polygons/data/*.mdl16.json filtered by 01 Main Tree List",
+      "model_count": 141,
+      "sha256": "6e0c5099264722720456790d3e220024a0dc4821ed0fa6ee636e293282f46722"
     }
   }
 }

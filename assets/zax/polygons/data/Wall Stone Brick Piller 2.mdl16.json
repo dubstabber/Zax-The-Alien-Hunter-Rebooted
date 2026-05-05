@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Wall Stone Brick Piller 2.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 227,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": -1.0,
+      "y": 55.0
+    },
+    {
+      "x": 30.0,
+      "y": 35.0
+    },
+    {
+      "x": 56.0,
+      "y": 59.0
+    },
+    {
+      "x": 26.0,
+      "y": 79.0
+    },
+    {
+      "x": -1.0,
+      "y": 55.0
+    }
+  ],
+  "bounds": {
+    "min_x": -1.0,
+    "min_y": 35.0,
+    "max_x": 56.0,
+    "max_y": 79.0
+  },
+  "prefix_size": 227,
+  "trailing_size": 27988
+}

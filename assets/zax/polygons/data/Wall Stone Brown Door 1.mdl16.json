@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/Wall Stone Brown Door 1.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 627,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": 16.0,
+      "y": 68.0
+    },
+    {
+      "x": -44.0,
+      "y": 3.0
+    },
+    {
+      "x": -12.0,
+      "y": -9.0
+    },
+    {
+      "x": 47.0,
+      "y": 52.0
+    },
+    {
+      "x": 16.0,
+      "y": 68.0
+    }
+  ],
+  "bounds": {
+    "min_x": -44.0,
+    "min_y": -9.0,
+    "max_x": 47.0,
+    "max_y": 68.0
+  },
+  "prefix_size": 627,
+  "trailing_size": 157784
+}

@@ -1,0 +1,39 @@
+{
+  "source": "zax-assets/data/NewZaxShipDoor.mdl16",
+  "format": "POLY2D",
+  "marker": "POLY2D",
+  "marker_offset": 1010,
+  "padding": 0,
+  "version": 7,
+  "vertex_count": 5,
+  "vertices": [
+    {
+      "x": 194.0,
+      "y": -127.0
+    },
+    {
+      "x": 257.0,
+      "y": -70.0
+    },
+    {
+      "x": 245.0,
+      "y": -66.0
+    },
+    {
+      "x": 183.0,
+      "y": -121.0
+    },
+    {
+      "x": 194.0,
+      "y": -127.0
+    }
+  ],
+  "bounds": {
+    "min_x": 183.0,
+    "min_y": -127.0,
+    "max_x": 257.0,
+    "max_y": -66.0
+  },
+  "prefix_size": 1010,
+  "trailing_size": 61509
+}
