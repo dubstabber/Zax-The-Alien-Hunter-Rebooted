@@ -37,6 +37,22 @@
       "height": 121,
       "sha256": "301b73017248d8283d1f6eb3b2782631e157c756b87464beb6ae17dc41a25fd8"
     },
+    "animation_zax_metadata": {
+      "type": "animation_metadata",
+      "path": "res://assets/zax/animations/data/Zax/Zax_metadata.json",
+      "source": "extract-zax-assets/extracted/animations/data/Zax/Zax_metadata.json",
+      "sequence": "Zax",
+      "frame_count": 1,
+      "sha256": "01616dc95a2def1b6ce82111af4f93d137583fd667588bfea3e127a970122d38"
+    },
+    "animation_zax_frame_0000": {
+      "type": "texture",
+      "path": "res://assets/zax/animations/data/Zax/frame_0000.png",
+      "source": "extract-zax-assets/extracted/animations/data/Zax/frame_0000.png",
+      "width": 170,
+      "height": 114,
+      "sha256": "8643daa7fb5eb196788b44a182d6659c528c26c9d673414da76d0a38ea449577"
+    },
     "polygons_01_main": {
       "type": "polygon_index",
       "path": "res://assets/zax/polygons/model_polygon_index.json",

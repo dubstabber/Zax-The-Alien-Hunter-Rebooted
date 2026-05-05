@@ -1,6 +1,7 @@
 extends SceneTree
 
 const ZaxLevelDataScript := preload("res://src/core/zax_level_data.gd")
+const ZaxLevelWorldScript := preload("res://src/level/level_world.gd")
 const ZaxModelPolygonIndexScript := preload("res://src/core/zax_model_polygon_index.gd")
 const ZaxWaypointMapScript := preload("res://src/core/zax_waypoint_map.gd")
 
@@ -17,6 +18,9 @@ func _run() -> void:
 	_test_level_data()
 	_test_waypoint_data()
 	_test_polygon_index()
+	_test_spawn_resolution()
+	_test_static_collision_candidates()
+	_test_player_scene()
 	_test_scene_instantiation()
 
 	if _failures > 0:
@@ -31,12 +35,14 @@ func _test_project_settings() -> void:
 	_expect_equal(ProjectSettings.get_setting("application/run/main_scene"), "res://scenes/app/app.tscn", "main scene")
 	_expect_equal(ProjectSettings.get_setting("autoload/ZaxAssets"), "*res://src/core/zax_assets.gd", "ZaxAssets autoload")
 	_expect_equal(ProjectSettings.get_setting("autoload/ZaxLevels"), "*res://src/core/zax_levels.gd", "ZaxLevels autoload")
+	for action in ["move_left", "move_right", "move_up", "move_down", "debug_toggle_overlay"]:
+		_expect_true(InputMap.has_action(action), "input action: %s" % action)
 
 
 func _test_manifest() -> void:
 	var manifest := _load_json("res://assets/zax/manifest.json")
 	var assets: Dictionary = manifest.get("assets", {})
-	for asset_id in ["manifest_extraction", "manifest_ida_coverage", "level_01_main", "waypoints_01_main", "texture_01_main", "polygons_01_main"]:
+	for asset_id in ["manifest_extraction", "manifest_ida_coverage", "level_01_main", "waypoints_01_main", "texture_01_main", "animation_zax_metadata", "animation_zax_frame_0000", "polygons_01_main"]:
 		_expect_true(assets.has(asset_id), "manifest has %s" % asset_id)
 		if assets.has(asset_id):
 			_expect_true(FileAccess.file_exists(assets[asset_id]["path"]), "asset exists: %s" % asset_id)
@@ -74,6 +80,7 @@ func _test_level_data() -> void:
 	_expect_equal(category_counts.get("Enemy,NonInteractiveSequence Actor"), 4, "combined enemy sequence category count")
 	_expect_equal(level.get_missing_category_count(), 30, "missing category count")
 	_expect_equal(level.get_model_count("Characters/Targ"), 20, "Targ entity count")
+	_expect_equal(level.team_infos.size(), 1, "team info count")
 
 
 func _test_waypoint_data() -> void:
@@ -108,6 +115,50 @@ func _test_polygon_index() -> void:
 		_expect_true(polygon.call("is_valid"), "Jungle 2 polygon is valid")
 		_expect_equal(polygon.get("vertex_count"), 12, "Jungle 2 polygon vertex count")
 		_expect_equal(polygon.get("bounds"), Rect2(Vector2(-38, 9), Vector2(115, 75)), "Jungle 2 polygon bounds")
+
+
+func _test_spawn_resolution() -> void:
+	var raw := _load_json("res://assets/zax/levels/data/01 Main.json")
+	var level: ZaxLevelData = ZaxLevelDataScript.new()
+	level.load_from_dictionary(&"level_01_main", raw)
+
+	_expect_equal(level.get_team_spawn_name(), "Game Start", "default team spawn name")
+	var spawn_point := level.find_spawn_point("Game Start")
+	_expect_true(spawn_point != null, "Game Start spawn resolves")
+	if spawn_point != null:
+		_expect_equal(spawn_point.get("model_path"), "Editor/Spawn Point", "Game Start spawn model")
+		_expect_equal(spawn_point.get("position"), Vector2(1932, 1440), "Game Start spawn position")
+
+	_expect_true(level.find_spawn_point("missing spawn") == null, "missing spawn returns null")
+
+
+func _test_static_collision_candidates() -> void:
+	var level_raw := _load_json("res://assets/zax/levels/data/01 Main.json")
+	var level: ZaxLevelData = ZaxLevelDataScript.new()
+	level.load_from_dictionary(&"level_01_main", level_raw)
+
+	var polygon_raw := _load_json("res://assets/zax/polygons/model_polygon_index.json")
+	var polygon_index: ZaxModelPolygonIndex = ZaxModelPolygonIndexScript.new()
+	polygon_index.load_from_dictionary(&"polygons_01_main", polygon_raw)
+
+	var candidate_count := 0
+	for entity_ref: RefCounted in level.entities:
+		var entity := entity_ref as ZaxLevelEntity
+		if ZaxLevelWorldScript.is_collision_entity(entity, polygon_index):
+			candidate_count += 1
+
+	_expect_equal(candidate_count, 911, "static collision candidate count")
+
+
+func _test_player_scene() -> void:
+	var scene := load("res://scenes/player/player.tscn")
+	_expect_true(scene is PackedScene, "player scene loads")
+	if scene is PackedScene:
+		var packed_scene := scene as PackedScene
+		var instance: Node = packed_scene.instantiate()
+		_expect_true(instance is CharacterBody2D, "player scene instantiates as CharacterBody2D")
+		if instance != null:
+			instance.free()
 
 
 func _count_zero_vertex_models(raw: Dictionary) -> int:

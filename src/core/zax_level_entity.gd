@@ -67,6 +67,10 @@ func has_category_tag(tag: String) -> bool:
 	return false
 
 
+func is_static_collision_candidate() -> bool:
+	return visible and collideable and not model_path.is_empty()
+
+
 func _string_field(key: String) -> String:
 	return _variant_to_string(raw_fields.get(key, ""))
 

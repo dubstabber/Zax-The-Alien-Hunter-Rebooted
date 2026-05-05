@@ -11,6 +11,7 @@ var height := 0.0
 var view_position := Vector2.ZERO
 var int_view_position := Vector2i.ZERO
 var music_mix: Dictionary = {}
+var team_infos: Array[Dictionary] = []
 var entities: Array[RefCounted] = []
 var raw_root: Dictionary = {}
 
@@ -27,6 +28,7 @@ func load_from_dictionary(level_id: StringName, raw: Dictionary) -> void:
 	view_position = _vector2_value(entries, "View Position", Vector2.ZERO)
 	int_view_position = _vector2i_value(entries, "Int View Position", Vector2i.ZERO)
 	music_mix = _object_entries_as_dictionary(entries, "Music Mix")
+	team_infos = _parse_team_infos(entries)
 	_parse_entities(entries)
 
 
@@ -69,6 +71,26 @@ func get_model_count(model_path: String) -> int:
 	return count
 
 
+func get_team_spawn_name(team_index := 0) -> String:
+	if team_index < 0 or team_index >= team_infos.size():
+		return ""
+	return String(team_infos[team_index].get("Spawn Point Name", ""))
+
+
+func find_spawn_point(spawn_name: String) -> ZaxLevelEntity:
+	if spawn_name.is_empty():
+		return null
+
+	for entity_ref: RefCounted in entities:
+		var entity := entity_ref as ZaxLevelEntity
+		if entity == null:
+			continue
+		if entity.name == spawn_name and entity.model_path == "Editor/Spawn Point":
+			return entity
+
+	return null
+
+
 func _parse_entities(entries: Array) -> void:
 	entities.clear()
 
@@ -86,6 +108,26 @@ func _parse_entities(entries: Array) -> void:
 		entity.load_from_entries(entity_index, entity_entries)
 		entities.append(entity)
 		entity_index += 1
+
+
+func _parse_team_infos(entries: Array) -> Array[Dictionary]:
+	var result: Array[Dictionary] = []
+	var team_info := _find_entry(entries, "Team Info")
+	var object_data: Dictionary = team_info.get("object", {})
+	var object_entries: Array = object_data.get("entries", [])
+	for child: Variant in object_entries:
+		if not child is Dictionary or String(child.get("key", "")) != "Team Info":
+			continue
+
+		var child_object: Dictionary = child.get("object", {})
+		var child_entries: Array = child_object.get("entries", [])
+		var parsed: Dictionary = {}
+		for entry: Variant in child_entries:
+			if entry is Dictionary and entry.has("key"):
+				parsed[String(entry["key"])] = String(entry.get("value", ""))
+		result.append(parsed)
+
+	return result
 
 
 func _find_entry(entries: Array, key: String) -> Dictionary:

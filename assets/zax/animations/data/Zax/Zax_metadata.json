@@ -1,0 +1,24 @@
+{
+  "sequence": "Zax",
+  "source": "zax-assets/data/Zax.seq16",
+  "frame_count": 1,
+  "present_frame_count": 1,
+  "fps": 30.0,
+  "rotation_count": 1,
+  "frames_per_rotation": 1,
+  "keyA": 27.0,
+  "keyB": 207.0,
+  "reserved0": 0,
+  "reserved1": 4096,
+  "reserved2": 1634882560,
+  "frames": [
+    {
+      "index": 0,
+      "rotation": 0,
+      "present": true,
+      "anchor_x": 0,
+      "anchor_y": 0,
+      "filename": "frame_0000.png"
+    }
+  ]
+}
